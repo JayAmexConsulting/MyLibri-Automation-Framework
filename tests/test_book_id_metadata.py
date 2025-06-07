@@ -76,17 +76,28 @@ def test_check_book_ids():
                 failures_in_a_row += 1
 
         # ✅ Save results
+      from pathlib import Path
+
+        # Make sure both folders exist
         Path("test_reports").mkdir(exist_ok=True)
+        Path("docs").mkdir(exist_ok=True)
+
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         csv_path = f"test_reports/book_id_sweep_{timestamp}.csv"
         json_path = f"test_reports/book_id_sweep_{timestamp}.json"
+        latest_json_path = "docs/latest.json"
 
+        # Save main results
         with open(csv_path, "w", newline='', encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=["id", "url", "title", "author"])
             writer.writeheader()
             writer.writerows(found_books)
 
-        with open("test_reports/latest.json", "w", encoding="utf-8") as f:
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(found_books, f, indent=2)
+
+        # ✅ Write directly to dashboard's data file
+        with open(latest_json_path, "w", encoding="utf-8") as f:
             json.dump(found_books, f, indent=2)
 
         print(f"\n📦 Done: {len(found_books)} books found")
