@@ -1,0 +1,3 @@
+test,module,function_name,outcome,duration
+tests/test_api_mylibri.py::test_homepage_loads,tests/test_api_mylibri.py,test_homepage_loads,passed,20.544
+tests/test_api_mylibri.py::test_signin_works,tests/test_api_mylibri.py,test_signin_works,passed,9.324

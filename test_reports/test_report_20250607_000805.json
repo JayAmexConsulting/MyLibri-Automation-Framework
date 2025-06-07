@@ -1,0 +1,9 @@
+[
+  {
+    "test": "tests/test_discover_sections_books.py::test_discover_sections_books",
+    "module": "tests/test_discover_sections_books.py",
+    "function_name": "test_discover_sections_books",
+    "outcome": "passed",
+    "duration": 154.288
+  }
+]

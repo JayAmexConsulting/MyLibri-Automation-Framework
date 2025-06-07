@@ -1,0 +1,35 @@
+name: Weekly Book Dashboard Update
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday at 08:00 UTC
+  workflow_dispatch:      # Manual trigger
+
+jobs:
+  update-books:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.11
+
+    - name: Install dependencies
+      run: |
+        pip install playwright
+        playwright install chromium
+
+    - name: Run book metadata test
+      run: python tests/test_book_id_metadata.py
+
+    - name: Commit updated latest.json
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add test_reports/latest.json
+        git commit -m "🔄 Auto update latest.json [bot]" || echo "No changes to commit"
+        git push

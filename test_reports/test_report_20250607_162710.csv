@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_book_id_metadata.py::test_book_metadata_extraction,tests/test_book_id_metadata.py,test_book_metadata_extraction,failed,719.414

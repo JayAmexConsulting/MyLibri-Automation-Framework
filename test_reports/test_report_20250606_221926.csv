@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_genres.py::test_capture_genres,tests/test_genres.py,test_capture_genres,passed,18.914

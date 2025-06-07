@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_discover_sections_books.py::test_discover_sections_books,tests/test_discover_sections_books.py,test_discover_sections_books,passed,19.615

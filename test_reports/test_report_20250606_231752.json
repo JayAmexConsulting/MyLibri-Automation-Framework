@@ -1,0 +1,9 @@
+[
+  {
+    "test": "tests/test_discover_all_books.py::test_books_by_category",
+    "module": "tests/test_discover_all_books.py",
+    "function_name": "test_books_by_category",
+    "outcome": "passed",
+    "duration": 132.735
+  }
+]

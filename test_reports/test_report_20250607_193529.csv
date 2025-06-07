@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_book_id_metadata.py::test_check_book_ids,tests/test_book_id_metadata.py,test_check_book_ids,passed,108.34

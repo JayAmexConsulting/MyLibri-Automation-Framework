@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_ui_mylibri.py::test_homepage_ui_elements,tests/test_ui_mylibri.py,test_homepage_ui_elements,failed,4.953

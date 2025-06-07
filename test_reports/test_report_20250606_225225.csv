@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_genres_books_metadata.py::test_extract_books_metadata,tests/test_genres_books_metadata.py,test_extract_books_metadata,failed,271.943

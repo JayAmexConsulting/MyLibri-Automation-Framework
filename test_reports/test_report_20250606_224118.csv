@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_genres_with_counts.py::test_capture_genres_with_book_counts,tests/test_genres_with_counts.py,test_capture_genres_with_book_counts,passed,489.086

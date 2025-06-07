@@ -1,0 +1,10 @@
+test,outcome,duration
+tests/test_api_mylibri.py::test_homepage_status_code,passed,0.261
+tests/test_api_mylibri.py::test_homepage_loads_under_1s,passed,0.198
+tests/test_api_mylibri.py::test_homepage_has_title,passed,0.193
+tests/test_api_mylibri.py::test_homepage_has_meta_description,passed,0.055
+tests/test_api_mylibri.py::test_homepage_has_h1,failed,0.052
+tests/test_api_mylibri.py::test_homepage_has_links,failed,0.045
+tests/test_test_utils.py::test_pass_count_is_correct,passed,0.003
+tests/test_test_utils.py::test_invalid_result_triggers_error,passed,0.002
+tests/test_test_utils.py::test_empty_input_runs_cleanly,passed,0.002

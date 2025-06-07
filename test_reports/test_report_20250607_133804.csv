@@ -1,0 +1,5 @@
+test,module,function_name,outcome,duration
+tests/test_api_mylibri.py::test_homepage_status_code,tests/test_api_mylibri.py,test_homepage_status_code,passed,0.235
+tests/test_api_mylibri.py::test_homepage_loads_under_1s,tests/test_api_mylibri.py,test_homepage_loads_under_1s,passed,0.181
+tests/test_api_mylibri.py::test_homepage_has_title,tests/test_api_mylibri.py,test_homepage_has_title,passed,0.186
+tests/test_api_mylibri.py::test_signin_page,tests/test_api_mylibri.py,test_signin_page,failed,0.194

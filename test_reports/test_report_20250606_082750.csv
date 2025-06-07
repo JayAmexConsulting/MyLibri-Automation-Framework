@@ -1,0 +1,10 @@
+test,module,function_name,outcome,duration
+tests/test_api_mylibri.py::test_homepage_status_code,tests/test_api_mylibri.py,test_homepage_status_code,passed,0.134
+tests/test_api_mylibri.py::test_homepage_loads_under_1s,tests/test_api_mylibri.py,test_homepage_loads_under_1s,passed,0.174
+tests/test_api_mylibri.py::test_homepage_has_title,tests/test_api_mylibri.py,test_homepage_has_title,passed,0.182
+tests/test_api_mylibri.py::test_homepage_has_meta_description,tests/test_api_mylibri.py,test_homepage_has_meta_description,passed,0.195
+tests/test_api_mylibri.py::test_homepage_has_h1,tests/test_api_mylibri.py,test_homepage_has_h1,failed,0.182
+tests/test_api_mylibri.py::test_homepage_has_links,tests/test_api_mylibri.py,test_homepage_has_links,failed,0.05
+tests/test_test_utils.py::test_pass_count_is_correct,tests/test_test_utils.py,test_pass_count_is_correct,passed,0.002
+tests/test_test_utils.py::test_invalid_result_triggers_error,tests/test_test_utils.py,test_invalid_result_triggers_error,passed,0.003
+tests/test_test_utils.py::test_empty_input_runs_cleanly,tests/test_test_utils.py,test_empty_input_runs_cleanly,passed,0.002

@@ -1,0 +1,9 @@
+[
+  {
+    "test": "tests/test_book_id_sweep.py::test_check_book_ids",
+    "module": "tests/test_book_id_sweep.py",
+    "function_name": "test_check_book_ids",
+    "outcome": "passed",
+    "duration": 78.874
+  }
+]
