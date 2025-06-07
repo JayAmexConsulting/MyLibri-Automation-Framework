@@ -1,0 +1,25 @@
+# Python bytecode & cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code settings
+.vscode/
+.env
+
+# pytest cache
+.pytest_cache/
+
+# Playwright files (optional)
+playwright-report/
+
+# Test result files
+test_reports/*.csv
+test_reports/*.json
+
+# Node modules if you ever use npm
+node_modules/
+
+# GitHub Pages dashboard build (optional - only if you regenerate it)
+dist/

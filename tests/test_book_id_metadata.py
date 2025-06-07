@@ -89,10 +89,10 @@ def test_check_book_ids():
             writer.writeheader()
             writer.writerows(found_books)
 
-        with open(json_path, "w", encoding="utf-8") as f:
+        with open("docs/latest.json, "w", encoding="utf-8") as f:
             json.dump(found_books, f, indent=2)
 
-        with open(latest_json_path, "w", encoding="utf-8") as f:
+        with open("docs/latest.json", "w", encoding="utf-8") as f:
             json.dump(found_books, f, indent=2)
 
         print(f"\n📦 Done: {len(found_books)} books found")
