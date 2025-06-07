@@ -1,0 +1,118 @@
+[
+  {
+    "id": 1,
+    "url": "https://mylibribooks.com/home/books/1",
+    "title": "The Challenge for Africa",
+    "author": "Wangari Maathai"
+  },
+  {
+    "id": 2,
+    "url": "https://mylibribooks.com/home/books/2",
+    "title": "God Dies by the Nile and Other Novels",
+    "author": "Nawal El Saadawi"
+  },
+  {
+    "id": 3,
+    "url": "https://mylibribooks.com/home/books/3",
+    "title": "The Captain and the Enemy",
+    "author": "Graham Greene"
+  },
+  {
+    "id": 4,
+    "url": "https://mylibribooks.com/home/books/4",
+    "title": "Dark Carnival",
+    "author": "Ray Bradbury"
+  },
+  {
+    "id": 5,
+    "url": "https://mylibribooks.com/home/books/5",
+    "title": "The Hemingway Valise",
+    "author": "Robert Olen Butler"
+  },
+  {
+    "id": 6,
+    "url": "https://mylibribooks.com/home/books/6",
+    "title": "This Mournable Body",
+    "author": "Tsitsi Dangaremgba"
+  },
+  {
+    "id": 7,
+    "url": "https://mylibribooks.com/home/books/7",
+    "title": "The Camel of Destruction",
+    "author": "Michael Pearce"
+  },
+  {
+    "id": 8,
+    "url": "https://mylibribooks.com/home/books/8",
+    "title": "Strangers with the Same Dream",
+    "author": "Alison Pick"
+  },
+  {
+    "id": 10,
+    "url": "https://mylibribooks.com/home/books/10",
+    "title": "Emerging Technologies in Agricultural Engineering",
+    "author": "Megh R. Goyal"
+  },
+  {
+    "id": 11,
+    "url": "https://mylibribooks.com/home/books/11",
+    "title": "Becoming 25",
+    "author": "Obianuju Jane Ebubeoha"
+  },
+  {
+    "id": 12,
+    "url": "https://mylibribooks.com/home/books/12",
+    "title": "The Complete Collected Poems",
+    "author": "Maya Angelou"
+  },
+  {
+    "id": 13,
+    "url": "https://mylibribooks.com/home/books/13",
+    "title": "Going to the Sun",
+    "author": "Jean Craighead George"
+  },
+  {
+    "id": 14,
+    "url": "https://mylibribooks.com/home/books/14",
+    "title": "The Breezes",
+    "author": "Joseph O'Neill"
+  },
+  {
+    "id": 15,
+    "url": "https://mylibribooks.com/home/books/15",
+    "title": "War Trash",
+    "author": "Ha Jin"
+  },
+  {
+    "id": 16,
+    "url": "https://mylibribooks.com/home/books/16",
+    "title": "A Good Woman",
+    "author": "Danielle Steel"
+  },
+  {
+    "id": 17,
+    "url": "https://mylibribooks.com/home/books/17",
+    "title": "Heavens May Fall",
+    "author": "Unity Dow"
+  },
+  {
+    "id": 18,
+    "url": "https://mylibribooks.com/home/books/18",
+    "title": "The Last Cut",
+    "author": "Michael Pearce"
+  },
+  {
+    "id": 19,
+    "url": "https://mylibribooks.com/home/books/19",
+    "title": "Between Gods: A Memoir",
+    "author": "Alison Pick"
+  },
+  {
+    "id": 20,
+    "url": "https://mylibribooks.com/home/books/20",
+    "title": "Mastering Management Consultancy: How to Develop your Skills as a Successful Consultant",
+    "author": "Calvert Markham"
+  }
+]
+with open("test_reports/latest.json", "w", encoding="utf-8") as f:
+    json.dump(found_books, f, indent=2)

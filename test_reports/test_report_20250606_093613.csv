@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_ui_mylibri.py::test_login_and_navigate_to_profile_settings,tests/test_ui_mylibri.py,test_login_and_navigate_to_profile_settings,failed,15.045

@@ -1,0 +1,9 @@
+[
+  {
+    "test": "tests/test_book_links_validity.py::test_validate_all_book_links",
+    "module": "tests/test_book_links_validity.py",
+    "function_name": "test_validate_all_book_links",
+    "outcome": "passed",
+    "duration": 19.66
+  }
+]

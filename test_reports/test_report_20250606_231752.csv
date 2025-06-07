@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_discover_all_books.py::test_books_by_category,tests/test_discover_all_books.py,test_books_by_category,passed,132.735

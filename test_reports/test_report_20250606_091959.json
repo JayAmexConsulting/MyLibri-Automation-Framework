@@ -1,0 +1,9 @@
+[
+  {
+    "test": "tests/test_ui_mylibri.py::test_login_and_navigate_to_profile_settings",
+    "module": "tests/test_ui_mylibri.py",
+    "function_name": "test_login_and_navigate_to_profile_settings",
+    "outcome": "failed",
+    "duration": 44.66
+  }
+]

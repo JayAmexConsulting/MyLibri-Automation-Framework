@@ -1,0 +1,9 @@
+[
+  {
+    "test": "tests/test_genres_books_metadata.py::test_extract_books_metadata",
+    "module": "tests/test_genres_books_metadata.py",
+    "function_name": "test_extract_books_metadata",
+    "outcome": "failed",
+    "duration": 271.943
+  }
+]

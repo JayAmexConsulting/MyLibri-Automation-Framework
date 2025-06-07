@@ -1,0 +1,16 @@
+[
+  {
+    "test": "tests/test_api_mylibri.py::test_homepage_loads",
+    "module": "tests/test_api_mylibri.py",
+    "function_name": "test_homepage_loads",
+    "outcome": "passed",
+    "duration": 20.544
+  },
+  {
+    "test": "tests/test_api_mylibri.py::test_signin_works",
+    "module": "tests/test_api_mylibri.py",
+    "function_name": "test_signin_works",
+    "outcome": "passed",
+    "duration": 9.324
+  }
+]

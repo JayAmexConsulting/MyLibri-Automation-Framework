@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_discover_all_books.py::test_count_all_books_from_discover,tests/test_discover_all_books.py,test_count_all_books_from_discover,passed,20.221

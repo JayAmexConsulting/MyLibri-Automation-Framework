@@ -1,0 +1,9 @@
+[
+  {
+    "test": "tests/test_ui_mylibri.py::test_homepage_ui_elements",
+    "module": "tests/test_ui_mylibri.py",
+    "function_name": "test_homepage_ui_elements",
+    "outcome": "failed",
+    "duration": 4.953
+  }
+]

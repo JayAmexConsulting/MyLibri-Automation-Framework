@@ -1,0 +1,9 @@
+[
+  {
+    "test": "tests/test_genres.py::test_capture_genres",
+    "module": "tests/test_genres.py",
+    "function_name": "test_capture_genres",
+    "outcome": "passed",
+    "duration": 18.914
+  }
+]

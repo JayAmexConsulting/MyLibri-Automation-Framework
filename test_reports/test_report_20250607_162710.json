@@ -1,0 +1,9 @@
+[
+  {
+    "test": "tests/test_book_id_metadata.py::test_book_metadata_extraction",
+    "module": "tests/test_book_id_metadata.py",
+    "function_name": "test_book_metadata_extraction",
+    "outcome": "failed",
+    "duration": 719.414
+  }
+]

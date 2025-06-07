@@ -1,0 +1,2 @@
+test,module,function_name,outcome,duration
+tests/test_ui_mylibri.py::test_login_and_navigate_through_profile_sections,tests/test_ui_mylibri.py,test_login_and_navigate_through_profile_sections,passed,24.995

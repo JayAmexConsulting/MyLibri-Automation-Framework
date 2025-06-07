@@ -1,0 +1,9 @@
+[
+  {
+    "test": "tests/test_genres_with_counts.py::test_capture_genres_with_book_counts",
+    "module": "tests/test_genres_with_counts.py",
+    "function_name": "test_capture_genres_with_book_counts",
+    "outcome": "passed",
+    "duration": 489.086
+  }
+]
