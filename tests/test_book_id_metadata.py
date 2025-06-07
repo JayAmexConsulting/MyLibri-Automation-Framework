@@ -28,7 +28,7 @@ def test_check_book_ids():
         page.click("button:has-text('Login')")
         page.wait_for_timeout(3000)
 
-        # ✅ Now authenticated — start checking book IDs
+        # ✅ Authenticated — start checking books
         found_books = []
         failures_in_a_row = 0
 
@@ -40,7 +40,6 @@ def test_check_book_ids():
                 page.goto(book_url, timeout=8000)
                 page.wait_for_timeout(500)
 
-                # Try to extract from .book-details block
                 book_title = ""
                 author_name = ""
 
@@ -63,9 +62,10 @@ def test_check_book_ids():
                         "id": book_id,
                         "url": book_url,
                         "title": book_title,
-                        "author": author_name
+                        "author": author_name,
+                        "timestamp": datetime.now().isoformat()
                     })
-                    failures_in_a_row = 0  # reset fail counter
+                    failures_in_a_row = 0
 
                 if failures_in_a_row >= STOP_AFTER_CONSECUTIVE_FAILS:
                     print(f"\n🛑 Stopping after {STOP_AFTER_CONSECUTIVE_FAILS} consecutive missing pages.")
@@ -76,9 +76,6 @@ def test_check_book_ids():
                 failures_in_a_row += 1
 
         # ✅ Save results
-                from pathlib import Path
-
-        # Make sure both folders exist
         Path("test_reports").mkdir(exist_ok=True)
         Path("docs").mkdir(exist_ok=True)
 
@@ -87,20 +84,19 @@ def test_check_book_ids():
         json_path = f"test_reports/book_id_sweep_{timestamp}.json"
         latest_json_path = "docs/latest.json"
 
-        # Save main results
-    with open(csv_path, "w", newline='', encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=["id", "url", "title", "author"])
+        with open(csv_path, "w", newline='', encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=["id", "url", "title", "author", "timestamp"])
             writer.writeheader()
             writer.writerows(found_books)
 
-    with open(json_path, "w", encoding="utf-8") as f:
+        with open(json_path, "w", encoding="utf-8") as f:
             json.dump(found_books, f, indent=2)
 
-        # ✅ Write directly to dashboard's data file
-    with open(latest_json_path, "w", encoding="utf-8") as f:
+        with open(latest_json_path, "w", encoding="utf-8") as f:
             json.dump(found_books, f, indent=2)
 
         print(f"\n📦 Done: {len(found_books)} books found")
         print(f"📄 CSV: {csv_path}")
         print(f"📄 JSON: {json_path}")
+
         browser.close()
