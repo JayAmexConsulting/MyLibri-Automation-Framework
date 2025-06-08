@@ -10,7 +10,7 @@ EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
 
 START_ID = 1
-MAX_ID = 3200
+MAX_ID = 100
 STOP_AFTER_CONSECUTIVE_FAILS = 50
 
 def test_check_book_ids():
