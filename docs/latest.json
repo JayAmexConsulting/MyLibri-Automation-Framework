@@ -3,168 +3,1045 @@
     "id": 1,
     "url": "https://mylibribooks.com/home/books/1",
     "title": "The Challenge for Africa",
-    "author": "Wangari Maathai"
+    "author": "Wangari Maathai",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:52:07.245405"
   },
   {
     "id": 2,
     "url": "https://mylibribooks.com/home/books/2",
     "title": "God Dies by the Nile and Other Novels",
-    "author": "Nawal El Saadawi"
+    "author": "Nawal El Saadawi",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:52:39.949104"
   },
   {
     "id": 3,
     "url": "https://mylibribooks.com/home/books/3",
     "title": "The Captain and the Enemy",
-    "author": "Graham Greene"
+    "author": "Graham Greene",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:53:13.071144"
   },
   {
     "id": 4,
     "url": "https://mylibribooks.com/home/books/4",
     "title": "Dark Carnival",
-    "author": "Ray Bradbury"
+    "author": "Ray Bradbury",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:53:45.449095"
   },
   {
     "id": 5,
     "url": "https://mylibribooks.com/home/books/5",
     "title": "The Hemingway Valise",
-    "author": "Robert Olen Butler"
+    "author": "Robert Olen Butler",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:54:18.146369"
   },
   {
     "id": 6,
     "url": "https://mylibribooks.com/home/books/6",
     "title": "This Mournable Body",
-    "author": "Tsitsi Dangaremgba"
+    "author": "Tsitsi Dangaremgba",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:54:51.241798"
   },
   {
     "id": 7,
     "url": "https://mylibribooks.com/home/books/7",
     "title": "The Camel of Destruction",
-    "author": "Michael Pearce"
+    "author": "Michael Pearce",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:55:23.402231"
   },
   {
     "id": 8,
     "url": "https://mylibribooks.com/home/books/8",
     "title": "Strangers with the Same Dream",
-    "author": "Alison Pick"
+    "author": "Alison Pick",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:55:55.628586"
   },
   {
     "id": 10,
     "url": "https://mylibribooks.com/home/books/10",
     "title": "Emerging Technologies in Agricultural Engineering",
-    "author": "Megh R. Goyal"
+    "author": "Megh R. Goyal",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:58:30.760767"
   },
   {
     "id": 11,
     "url": "https://mylibribooks.com/home/books/11",
     "title": "Becoming 25",
-    "author": "Obianuju Jane Ebubeoha"
+    "author": "Obianuju Jane Ebubeoha",
+    "rating": "(2.0 Average Rating)",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:59:02.898085"
   },
   {
     "id": 12,
     "url": "https://mylibribooks.com/home/books/12",
     "title": "The Complete Collected Poems",
-    "author": "Maya Angelou"
+    "author": "Maya Angelou",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-07T23:59:35.067884"
   },
   {
     "id": 13,
     "url": "https://mylibribooks.com/home/books/13",
     "title": "Going to the Sun",
-    "author": "Jean Craighead George"
+    "author": "Jean Craighead George",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:00:07.882288"
   },
   {
     "id": 14,
     "url": "https://mylibribooks.com/home/books/14",
     "title": "The Breezes",
-    "author": "Joseph O'Neill"
+    "author": "Joseph O'Neill",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:00:40.834221"
   },
   {
     "id": 15,
     "url": "https://mylibribooks.com/home/books/15",
     "title": "War Trash",
-    "author": "Ha Jin"
+    "author": "Ha Jin",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:01:13.664452"
   },
   {
     "id": 16,
     "url": "https://mylibribooks.com/home/books/16",
     "title": "A Good Woman",
-    "author": "Danielle Steel"
+    "author": "Danielle Steel",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:01:46.788874"
   },
   {
     "id": 17,
     "url": "https://mylibribooks.com/home/books/17",
     "title": "Heavens May Fall",
-    "author": "Unity Dow"
+    "author": "Unity Dow",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:02:19.328395"
   },
   {
     "id": 18,
     "url": "https://mylibribooks.com/home/books/18",
     "title": "The Last Cut",
-    "author": "Michael Pearce"
+    "author": "Michael Pearce",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:02:51.625743"
   },
   {
     "id": 19,
     "url": "https://mylibribooks.com/home/books/19",
     "title": "Between Gods: A Memoir",
-    "author": "Alison Pick"
+    "author": "Alison Pick",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:03:23.730737"
   },
   {
     "id": 20,
     "url": "https://mylibribooks.com/home/books/20",
     "title": "Mastering Management Consultancy: How to Develop your Skills as a Successful Consultant",
-    "author": "Calvert Markham"
+    "author": "Calvert Markham",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:03:55.688848"
   },
   {
     "id": 21,
     "url": "https://mylibribooks.com/home/books/21",
     "title": "Never an Afterthought: Private Sector Pragmatism to Government Idealism & the N-Power Success Story",
-    "author": "Afolabi Sokpehi Imoukhuede"
+    "author": "Afolabi Sokpehi Imoukhuede",
+    "rating": "(5.0 Average Rating)",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:04:28.030400"
   },
   {
     "id": 22,
     "url": "https://mylibribooks.com/home/books/22",
     "title": "The Covenant",
-    "author": "James A. Michener"
+    "author": "James A. Michener",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:05:00.649686"
   },
   {
     "id": 24,
     "url": "https://mylibribooks.com/home/books/24",
     "title": "The Chaos",
-    "author": "Nalo Hopkinson"
+    "author": "Nalo Hopkinson",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:07:35.251486"
   },
   {
     "id": 25,
     "url": "https://mylibribooks.com/home/books/25",
     "title": "We'll Always Have Paris: Stories",
-    "author": "Ray Bradbury"
+    "author": "Ray Bradbury",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:08:07.673215"
   },
   {
     "id": 26,
     "url": "https://mylibribooks.com/home/books/26",
     "title": "Undercover",
-    "author": "Danielle Steel"
+    "author": "Danielle Steel",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:08:40.317834"
   },
   {
     "id": 27,
     "url": "https://mylibribooks.com/home/books/27",
     "title": "Far and Beyon'",
-    "author": "Unity Dow"
+    "author": "Unity Dow",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:09:13.389599"
   },
   {
     "id": 28,
     "url": "https://mylibribooks.com/home/books/28",
     "title": "The Mamur Zapt and the Return of the Carpet",
-    "author": "Michael Pearce"
+    "author": "Michael Pearce",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:09:45.824578"
   },
   {
     "id": 29,
     "url": "https://mylibribooks.com/home/books/29",
     "title": "Misdefending The Realm",
-    "author": "Antony Percy"
+    "author": "Antony Percy",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:10:18.112881"
   },
   {
     "id": 30,
     "url": "https://mylibribooks.com/home/books/30",
     "title": "Excel for Accountants: Tips, Tricks & Techniques",
-    "author": "Conrad Carlberg"
+    "author": "Conrad Carlberg",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:10:50.580908"
+  },
+  {
+    "id": 31,
+    "url": "https://mylibribooks.com/home/books/31",
+    "title": "Call Me Naeto",
+    "author": "Timi Waters",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:11:22.777711"
+  },
+  {
+    "id": 32,
+    "url": "https://mylibribooks.com/home/books/32",
+    "title": "The Death of Ivan Ilych and Other Stories",
+    "author": "Leo Tolstoy",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:11:55.710268"
+  },
+  {
+    "id": 33,
+    "url": "https://mylibribooks.com/home/books/33",
+    "title": "Gravel Heart",
+    "author": "Abdulrazak Gurnah",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:12:28.443982"
+  },
+  {
+    "id": 34,
+    "url": "https://mylibribooks.com/home/books/34",
+    "title": "The Comedians",
+    "author": "Graham Greene",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:13:00.334438"
+  },
+  {
+    "id": 35,
+    "url": "https://mylibribooks.com/home/books/35",
+    "title": "Watched",
+    "author": "Kerry Wilkinson",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:13:33.195784"
+  },
+  {
+    "id": 36,
+    "url": "https://mylibribooks.com/home/books/36",
+    "title": "Precious Gifts",
+    "author": "Danielle Steel",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:14:05.841483"
+  },
+  {
+    "id": 37,
+    "url": "https://mylibribooks.com/home/books/37",
+    "title": "Juggling Truths",
+    "author": "Unity Dow",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:14:38.030494"
+  },
+  {
+    "id": 38,
+    "url": "https://mylibribooks.com/home/books/38",
+    "title": "The Mamur Zapt and the Night of the Dog",
+    "author": "Michael Pearce",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:15:10.143389"
+  },
+  {
+    "id": 39,
+    "url": "https://mylibribooks.com/home/books/39",
+    "title": "An American Type: A Novel",
+    "author": "Henry Ling Roth",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:15:42.145532"
+  },
+  {
+    "id": 41,
+    "url": "https://mylibribooks.com/home/books/41",
+    "title": "Lagos to London",
+    "author": "Lola Aworanti-Ekugo",
+    "rating": "(3.0 Average Rating)",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:18:16.614975"
+  },
+  {
+    "id": 42,
+    "url": "https://mylibribooks.com/home/books/42",
+    "title": "The Displaced",
+    "author": "Viet Thanh Nguyen",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:18:49.201236"
+  },
+  {
+    "id": 43,
+    "url": "https://mylibribooks.com/home/books/43",
+    "title": "Great Benin",
+    "author": "Henry Ling Roth",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:19:21.231833"
+  },
+  {
+    "id": 44,
+    "url": "https://mylibribooks.com/home/books/44",
+    "title": "Where the Crawdads Sing",
+    "author": "Owens Delia",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:19:54.016798"
+  },
+  {
+    "id": 45,
+    "url": "https://mylibribooks.com/home/books/45",
+    "title": "The Stories of Ray Bradbury",
+    "author": "Ray Bradbury",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:20:26.653427"
+  },
+  {
+    "id": 46,
+    "url": "https://mylibribooks.com/home/books/46",
+    "title": "One Day at a Time",
+    "author": "Danielle Steel",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:21:00.041040"
+  },
+  {
+    "id": 47,
+    "url": "https://mylibribooks.com/home/books/47",
+    "title": "Stones from the River",
+    "author": "Ursula Hegi",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:21:32.886965"
+  },
+  {
+    "id": 48,
+    "url": "https://mylibribooks.com/home/books/48",
+    "title": "The Men Behind",
+    "author": "Michael Pearce",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:22:05.131186"
+  },
+  {
+    "id": 49,
+    "url": "https://mylibribooks.com/home/books/49",
+    "title": "Mercy of a Rude Stream",
+    "author": "Henry Ling Roth",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:22:37.613624"
+  },
+  {
+    "id": 50,
+    "url": "https://mylibribooks.com/home/books/50",
+    "title": "Oliver Twist",
+    "author": "Charles Dickens",
+    "rating": "(5.0 Average Rating)",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:23:10.594969"
+  },
+  {
+    "id": 51,
+    "url": "https://mylibribooks.com/home/books/51",
+    "title": "Financial Accounting: An Introduction to Concepts, Methods and Uses",
+    "author": "Roman L. Weil et.al",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:23:42.733487"
+  },
+  {
+    "id": 52,
+    "url": "https://mylibribooks.com/home/books/52",
+    "title": "The Distance Between Us",
+    "author": "Reyna Grande",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:24:14.707287"
+  },
+  {
+    "id": 53,
+    "url": "https://mylibribooks.com/home/books/53",
+    "title": "Groucho Marx, King of the Jungle",
+    "author": "Ron Goulart",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:24:47.437665"
+  },
+  {
+    "id": 54,
+    "url": "https://mylibribooks.com/home/books/54",
+    "title": "Kowloon Tong",
+    "author": "Paul Theroux",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:25:20.249215"
+  },
+  {
+    "id": 55,
+    "url": "https://mylibribooks.com/home/books/55",
+    "title": "The Toynbee Convector",
+    "author": "Ray Bradbury",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:25:52.533883"
+  },
+  {
+    "id": 56,
+    "url": "https://mylibribooks.com/home/books/56",
+    "title": "The Award",
+    "author": "Danielle Steel",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:26:25.534128"
+  },
+  {
+    "id": 57,
+    "url": "https://mylibribooks.com/home/books/57",
+    "title": "Sacred Time",
+    "author": "Ursula Hegi",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:26:57.717119"
+  },
+  {
+    "id": 58,
+    "url": "https://mylibribooks.com/home/books/58",
+    "title": "The Bride Box",
+    "author": "Michael Pearce",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:27:29.926290"
+  },
+  {
+    "id": 59,
+    "url": "https://mylibribooks.com/home/books/59",
+    "title": "The Tattooed Girl",
+    "author": "Oates Joyce Carol",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:28:02.184126"
+  },
+  {
+    "id": 61,
+    "url": "https://mylibribooks.com/home/books/61",
+    "title": "The Dogs of War",
+    "author": "Frederick Forsyth",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:30:36.952314"
+  },
+  {
+    "id": 62,
+    "url": "https://mylibribooks.com/home/books/62",
+    "title": "Gulliver's Travels",
+    "author": "Jonathan Swift",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:31:09.269985"
+  },
+  {
+    "id": 63,
+    "url": "https://mylibribooks.com/home/books/63",
+    "title": "Picture Palace",
+    "author": "Paul Theroux",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:31:41.495306"
+  },
+  {
+    "id": 64,
+    "url": "https://mylibribooks.com/home/books/64",
+    "title": "One More for the Road",
+    "author": "Ray Bradbury",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:32:13.758776"
+  },
+  {
+    "id": 65,
+    "url": "https://mylibribooks.com/home/books/65",
+    "title": "Property of a Noblewoman",
+    "author": "Danielle Steel",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:32:47.183865"
+  },
+  {
+    "id": 66,
+    "url": "https://mylibribooks.com/home/books/66",
+    "title": "Hotel of the Saints",
+    "author": "Ursula Hegi",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:33:20.184187"
+  },
+  {
+    "id": 67,
+    "url": "https://mylibribooks.com/home/books/67",
+    "title": "World Without End",
+    "author": "Ken Follett",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:33:52.764039"
+  },
+  {
+    "id": 68,
+    "url": "https://mylibribooks.com/home/books/68",
+    "title": "The Margaret Thatcher School of Beauty",
+    "author": "Marsha Mehran",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:34:25.573861"
+  },
+  {
+    "id": 69,
+    "url": "https://mylibribooks.com/home/books/69",
+    "title": "On Wilder Seas",
+    "author": "Nikki Marmery",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:34:58.590040"
+  },
+  {
+    "id": 70,
+    "url": "https://mylibribooks.com/home/books/70",
+    "title": "Financial Econometrics: From Basics to Advanced Modeling Techniques",
+    "author": "Svetlozar T. Rachev",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:35:32.394187"
+  },
+  {
+    "id": 71,
+    "url": "https://mylibribooks.com/home/books/71",
+    "title": "The Education of a British-Protected Child",
+    "author": "Chinua Achebe",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:36:04.723289"
+  },
+  {
+    "id": 72,
+    "url": "https://mylibribooks.com/home/books/72",
+    "title": "H is for Hawk",
+    "author": "Helen Macdonald",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:36:36.836248"
+  },
+  {
+    "id": 73,
+    "url": "https://mylibribooks.com/home/books/73",
+    "title": "The Lower River",
+    "author": "Paul Theroux",
+    "rating": "(5.0 Average Rating)",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:37:09.641265"
+  },
+  {
+    "id": 74,
+    "url": "https://mylibribooks.com/home/books/74",
+    "title": "The Machineries of Joy",
+    "author": "Ray Bradbury",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:37:42.548078"
+  },
+  {
+    "id": 75,
+    "url": "https://mylibribooks.com/home/books/75",
+    "title": "Rogue",
+    "author": "Danielle Steel",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:38:15.830989"
+  },
+  {
+    "id": 76,
+    "url": "https://mylibribooks.com/home/books/76",
+    "title": "The Love Season",
+    "author": "Elin Hilderbrand",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:38:49.328415"
+  },
+  {
+    "id": 77,
+    "url": "https://mylibribooks.com/home/books/77",
+    "title": "Why Pick on Me?",
+    "author": "James Hadley Chase",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:39:22.208237"
+  },
+  {
+    "id": 78,
+    "url": "https://mylibribooks.com/home/books/78",
+    "title": "Pomengranate Soup",
+    "author": "Marsha Mehran",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:39:54.432949"
+  },
+  {
+    "id": 79,
+    "url": "https://mylibribooks.com/home/books/79",
+    "title": "Recipe for A Perfect Wife",
+    "author": "Karma Brown",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:40:27.727211"
+  },
+  {
+    "id": 80,
+    "url": "https://mylibribooks.com/home/books/80",
+    "title": "The Harvard Business Review Manager\u2019s Handbook: The 17 Skills Leaders Need to Stand Out",
+    "author": "Harvard Business Review",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:41:00.353264"
+  },
+  {
+    "id": 81,
+    "url": "https://mylibribooks.com/home/books/81",
+    "title": "The End or Something Like That",
+    "author": "Ann Dee Ellis",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:41:33.616010"
+  },
+  {
+    "id": 82,
+    "url": "https://mylibribooks.com/home/books/82",
+    "title": "Hand Me a Fig Leaf",
+    "author": "James Hadley Chase",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:42:06.142690"
+  },
+  {
+    "id": 83,
+    "url": "https://mylibribooks.com/home/books/83",
+    "title": "Murder in Mount Holly",
+    "author": "Paul Theroux",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:42:38.590149"
+  },
+  {
+    "id": 84,
+    "url": "https://mylibribooks.com/home/books/84",
+    "title": "Ahmed and the Oblivion Machines",
+    "author": "Ray Bradbury",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:43:11.408428"
+  },
+  {
+    "id": 85,
+    "url": "https://mylibribooks.com/home/books/85",
+    "title": "Prodigal Son",
+    "author": "Danielle Steel",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:43:45.135701"
+  },
+  {
+    "id": 86,
+    "url": "https://mylibribooks.com/home/books/86",
+    "title": "The Island",
+    "author": "Elin Hilderbrand",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:44:18.655130"
+  },
+  {
+    "id": 87,
+    "url": "https://mylibribooks.com/home/books/87",
+    "title": "In A Vain Shadow",
+    "author": "James Hadley Chase",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:44:51.816558"
+  },
+  {
+    "id": 88,
+    "url": "https://mylibribooks.com/home/books/88",
+    "title": "Hope's War",
+    "author": "Marsha Forchuk Skrypuch",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:45:25.638375"
+  },
+  {
+    "id": 90,
+    "url": "https://mylibribooks.com/home/books/90",
+    "title": "The Extinction of Menai",
+    "author": "Chuma Nwokolo",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:48:00.013647"
+  },
+  {
+    "id": 91,
+    "url": "https://mylibribooks.com/home/books/91",
+    "title": "Harry's Last Stand",
+    "author": "Harry Leslie Smith",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:48:32.469277"
+  },
+  {
+    "id": 92,
+    "url": "https://mylibribooks.com/home/books/92",
+    "title": "My Other Life",
+    "author": "Paul Theroux",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:49:05.547806"
+  },
+  {
+    "id": 93,
+    "url": "https://mylibribooks.com/home/books/93",
+    "title": "I Sing the Body Electric",
+    "author": "Ray Bradbury",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:49:38.359099"
+  },
+  {
+    "id": 94,
+    "url": "https://mylibribooks.com/home/books/94",
+    "title": "Magic",
+    "author": "Danielle Steel",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:50:11.676120"
+  },
+  {
+    "id": 95,
+    "url": "https://mylibribooks.com/home/books/95",
+    "title": "Here's to Us",
+    "author": "Elin Hilderbrand",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:50:44.740437"
+  },
+  {
+    "id": 96,
+    "url": "https://mylibribooks.com/home/books/96",
+    "title": "Divisadero",
+    "author": "Michael Ondaatje",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:51:17.335642"
+  },
+  {
+    "id": 97,
+    "url": "https://mylibribooks.com/home/books/97",
+    "title": "Don't Tell the Enemy",
+    "author": "Marsha Forchuk Skrypuch",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:51:50.439390"
+  },
+  {
+    "id": 98,
+    "url": "https://mylibribooks.com/home/books/98",
+    "title": "Speechless - Understanding Education",
+    "author": "Rosemary Sage",
+    "rating": "(5.0 Average Rating)",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:52:22.937349"
+  },
+  {
+    "id": 99,
+    "url": "https://mylibribooks.com/home/books/99",
+    "title": "Advances in Agricultural Animal Welfare: Science and Practice",
+    "author": "Joy Mench",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:52:55.752840"
+  },
+  {
+    "id": 100,
+    "url": "https://mylibribooks.com/home/books/100",
+    "title": "Have a Change of Scene",
+    "author": "James Hadley Chase",
+    "rating": "No Rating",
+    "cover_url": "",
+    "image_ok": false,
+    "page_status": 200,
+    "timestamp": "2025-06-08T00:53:29.014297"
   }
 ]
