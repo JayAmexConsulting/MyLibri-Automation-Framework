@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import sync_playwright
 import time, csv, json
 from datetime import datetime
@@ -8,6 +9,7 @@ PASSWORD = "Moniwyse!400"
 BASE_URL = "https://mylibribooks.com"
 DISCOVER_URL = f"{BASE_URL}/home/discover"
 
+@pytest.mark.fast
 def test_discover_books():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False, slow_mo=200)

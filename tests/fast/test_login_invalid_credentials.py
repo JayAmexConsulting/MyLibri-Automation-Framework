@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import sync_playwright
 from pathlib import Path
 from datetime import datetime
@@ -6,7 +7,8 @@ URL = "https://mylibribooks.com"
 INVALID_EMAIL = "wrong.user@example.com"
 INVALID_PASSWORD = "incorrectPassword123"
 
-def test_invalid_login():
+@pytest.mark.fast
+def test_quick_check():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     screenshot_dir = Path(f"test_reports/screenshots_invalid_login_{timestamp}")
     screenshot_dir.mkdir(parents=True, exist_ok=True)

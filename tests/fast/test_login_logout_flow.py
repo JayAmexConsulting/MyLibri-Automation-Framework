@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import sync_playwright
 from pathlib import Path
 from datetime import datetime
@@ -6,7 +7,8 @@ URL = "https://mylibribooks.com"
 EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
 
-def test_login_and_logout():
+@pytest.mark.fast
+def test_quick_check():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     screenshot_dir = Path(f"test_reports/screenshots_login_logout_{timestamp}")
     screenshot_dir.mkdir(parents=True, exist_ok=True)

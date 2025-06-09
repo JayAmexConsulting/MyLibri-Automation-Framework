@@ -1,7 +1,9 @@
+import pytest
 from playwright.sync_api import sync_playwright
 import csv, json
 from datetime import datetime
 from pathlib import Path
+   
 
 URL = "https://mylibribooks.com"
 LOGIN_URL = f"{URL}/signin"
@@ -13,7 +15,8 @@ START_ID = 1
 MAX_ID = 3000
 STOP_AFTER_CONSECUTIVE_FAILS = 30
 
-def test_check_book_ids():
+@pytest.mark.slow
+def test_long_running():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False, slow_mo=200)
         page = browser.new_page()

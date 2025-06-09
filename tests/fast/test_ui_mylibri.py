@@ -1,10 +1,12 @@
+import pytest
 from playwright.sync_api import sync_playwright
 
 URL = "https://mylibribooks.com"
 EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
 
-def test_login_and_navigate_through_profile_sections():
+@pytest.mark.fast
+def test_quick_check():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False, slow_mo=500)
         page = browser.new_page()

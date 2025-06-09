@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import sync_playwright
 import csv, json
 from datetime import datetime
@@ -7,7 +8,8 @@ URL = "https://mylibribooks.com"
 EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
 
-def test_extract_books_metadata():
+@pytest.mark.slow
+def test_long_running():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False, slow_mo=300)
         page = browser.new_page()

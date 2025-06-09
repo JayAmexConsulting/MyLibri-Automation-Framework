@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import sync_playwright
 import requests
 import json
@@ -14,7 +15,8 @@ START_ID = 1
 MAX_ID = 3000
 STOP_AFTER_CONSECUTIVE_FAILS = 50
 
-def test_validate_book_metadata():
+@pytest.mark.slow
+def test_long_running():
     found_books = []
     failures_in_a_row = 0
 
