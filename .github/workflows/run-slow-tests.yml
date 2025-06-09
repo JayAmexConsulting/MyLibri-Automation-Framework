@@ -1,27 +1,51 @@
-name: Slow Test Suite
+
+# -----------------------------------------------
+# 🕒 run-slow-tests.yml — Slow Tests Weekly
+# -----------------------------------------------
+name: 🕒 Weekly Slow Tests
 
 on:
   schedule:
-    - cron: '0 2 * * 0' # every Sunday at 02:00 UTC
+    - cron: '0 7 * * 1'  # Every Monday at 07:00 UTC
   workflow_dispatch:
 
 jobs:
   slow-tests:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - name: 🔀 Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
+      - name: 🐧 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-        playwright install chromium
+      - name: 🔧 Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium
 
-    - name: Run slow tests
-      run: pytest -m "slow" --tb=short --disable-warnings
+      - name: 🔢 Run slow tests
+        run: pytest -m "slow" --html=test_reports/slow_report.html --self-contained-html
+
+      - name: 📃 Upload HTML report
+        uses: actions/upload-artifact@v3
+        with:
+          name: slow-test-report
+          path: test_reports/slow_report.html
+
+  notify-slack:
+    needs: slow-tests
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚨 Slack alert on failure
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_COLOR: '#ff0000'
+          SLACK_TITLE: "❌ Slow Test Failure"
+          SLACK_MESSAGE: "One or more slow tests failed in *${{ github.workflow }}*.
+Branch: `${{ github.ref }}`
+Commit: `${{ github.sha }}`"

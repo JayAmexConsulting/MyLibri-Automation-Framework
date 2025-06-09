@@ -1,27 +1,50 @@
-name: Fast Test Suite
+# -----------------------------------------------
+# ✅ run-fast-tests.yml — Fast Tests Daily
+# -----------------------------------------------
+name: 🕒 Daily Fast Tests
 
 on:
   schedule:
-    - cron: '0 8 * * *' # every day at 08:00 UTC
+    - cron: '0 8 * * *'  # Every day at 08:00 UTC
   workflow_dispatch:
 
 jobs:
   fast-tests:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - name: 🔀 Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
+      - name: 🐧 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-        playwright install chromium
+      - name: 🔧 Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium
 
-    - name: Run fast tests
-      run: pytest -m "not slow" --tb=short --disable-warnings
+      - name: 🔢 Run fast tests
+        run: pytest -m "fast" --html=test_reports/fast_report.html --self-contained-html
+
+      - name: 📃 Upload HTML report
+        uses: actions/upload-artifact@v3
+        with:
+          name: fast-test-report
+          path: test_reports/fast_report.html
+
+  notify-slack:
+    needs: fast-tests
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚨 Slack alert on failure
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_COLOR: '#ff0000'
+          SLACK_TITLE: "❌ Fast Test Failure"
+          SLACK_MESSAGE: "One or more fast tests failed in *${{ github.workflow }}*.
+Branch: `${{ github.ref }}`
+Commit: `${{ github.sha }}`"
