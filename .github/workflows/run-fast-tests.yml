@@ -32,17 +32,19 @@ jobs:
         name: fast-test-report
         path: reports/fast_test_report.html
 
-  notify-slack:
+    notify-slack:
     needs: fast-tests
     if: failure()
     runs-on: ubuntu-latest
+
     steps:
       - name: 🚨 Slack alert on failure
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_COLOR: '#ff0000'
-          SLACK_TITLE: "❌ Fast Test Failure"
-          SLACK_MESSAGE: "One or more fast tests failed in *${{ github.workflow }}*.
-Branch: `${{ github.ref }}`
-Commit: `${{ github.sha }}`"
+          SLACK_COLOR: '#ffcc00'
+          SLACK_TITLE: "⚠️ Fast Test Failure"
+          SLACK_MESSAGE: |
+            One or more fast tests failed in *${{ github.workflow }}*.
+            Branch: ${{ github.ref }}
+            Commit: ${{ github.sha }}

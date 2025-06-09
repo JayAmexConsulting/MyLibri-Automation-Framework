@@ -32,10 +32,11 @@ jobs:
         name: slow-test-report
         path: reports/slow_test_report.html
 
-  notify-slack:
+   notify-slack:
     needs: slow-tests
     if: failure()
     runs-on: ubuntu-latest
+
     steps:
       - name: 🚨 Slack alert on failure
         uses: rtCamp/action-slack-notify@v2
@@ -43,6 +44,7 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_COLOR: '#ff0000'
           SLACK_TITLE: "❌ Slow Test Failure"
-          SLACK_MESSAGE: "One or more slow tests failed in *${{ github.workflow }}*.
-Branch: `${{ github.ref }}`
-Commit: `${{ github.sha }}`"
+          SLACK_MESSAGE: |
+            One or more slow tests failed in *${{ github.workflow }}*.
+            Branch: ${{ github.ref }}
+            Commit: ${{ github.sha }}
