@@ -31,8 +31,7 @@ jobs:
       with:
         name: fast-test-report
         path: reports/fast_test_report.html
-
-    notify-slack:
+  notify-slack:
     needs: fast-tests
     if: failure()
     runs-on: ubuntu-latest

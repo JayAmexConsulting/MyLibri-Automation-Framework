@@ -31,8 +31,7 @@ jobs:
       with:
         name: slow-test-report
         path: reports/slow_test_report.html
-
-   notify-slack:
+  notify-slack:
     needs: slow-tests
     if: failure()
     runs-on: ubuntu-latest
