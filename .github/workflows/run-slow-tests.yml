@@ -1,27 +1,35 @@
-name: Slow Test Suite
+name: 🐢 Weekly Slow Tests
 
 on:
   schedule:
-    - cron: '0 2 * * 0' # every Sunday at 02:00 UTC
+    - cron: '0 4 * * 1'   # Every Monday at 04:00 UTC
   workflow_dispatch:
 
 jobs:
-  slow-tests:
+  run-slow:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - name: ⬇️ Checkout Code
+        uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-        playwright install chromium
+      - name: 📦 Install Dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium
 
-    - name: Run slow tests
-      run: pytest -m "slow" --tb=short --disable-warnings
+      - name: 🧪 Run Slow Tests
+        run: pytest tests/slow --maxfail=3 --disable-warnings --json-report --json-report-file=test_reports/slow/latest.json
+
+      - name: 📊 Commit Slow Results
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add test_reports/slow/latest.json
+          git commit -m "🐢 Slow test report auto-update" || echo "No changes"
+          git push
