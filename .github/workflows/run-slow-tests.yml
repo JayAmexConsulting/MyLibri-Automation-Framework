@@ -1,35 +1,36 @@
-name: 🕒 Weekly Slow Tests
+name: Weekly Slow Tests
 
 on:
   schedule:
-    - cron: '0 7 * * 1'  # Every Monday at 07:00 UTC
+    - cron: '0 8 * * 1' # Runs weekly on Mondays at 08:00 UTC
   workflow_dispatch:
 
 jobs:
   slow-tests:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 🔀 Checkout code
-        uses: actions/checkout@v3
+    - name: 📦 Checkout Repository
+      uses: actions/checkout@v4
 
-      - name: 🐧 Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
 
-      - name: 🔧 Install dependencies
-        run: |
-          pip install -r requirements.txt
-          playwright install chromium
+    - name: 📥 Install Dependencies
+      run: |
+        pip install -r requirements.txt
+        playwright install chromium
 
-      - name: 🔢 Run slow tests
-        run: pytest -m "slow" --html=test_reports/slow_report.html --self-contained-html
+    - name: 🐌 Run Slow Tests
+      run: pytest tests/slow --html=reports/slow_test_report.html --self-contained-html -m "slow"
 
-      - name: 📃 Upload HTML report
-        uses: actions/upload-artifact@v4
-        with:
-          name: slow-test-report
-          path: test_reports/slow_report.html
+    - name: 📤 Upload Slow Test Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: slow-test-report
+        path: reports/slow_test_report.html
 
   notify-slack:
     needs: slow-tests

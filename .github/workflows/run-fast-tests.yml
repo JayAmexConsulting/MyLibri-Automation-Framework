@@ -1,35 +1,36 @@
-name: 🕒 Daily Fast Tests
+name: Daily Fast Tests
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # Every day at 08:00 UTC
+    - cron: '0 8 * * *' # Runs daily at 08:00 UTC
   workflow_dispatch:
 
 jobs:
   fast-tests:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 🔀 Checkout code
-        uses: actions/checkout@v3
+    - name: 📦 Checkout Repository
+      uses: actions/checkout@v4
 
-      - name: 🐧 Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
 
-      - name: 🔧 Install dependencies
-        run: |
-          pip install -r requirements.txt
-          playwright install chromium
+    - name: 📥 Install Dependencies
+      run: |
+        pip install -r requirements.txt
+        playwright install chromium
 
-      - name: 🔢 Run fast tests
-        run: pytest -m "fast" --html=test_reports/fast_report.html --self-contained-html
+    - name: 🚀 Run Fast Tests
+      run: pytest tests/fast --html=reports/fast_test_report.html --self-contained-html -m "fast"
 
-      - name: 📃 Upload HTML report
-        uses: actions/upload-artifact@v4
-        with:
-          name: fast-test-report
-          path: test_reports/fast_report.html
+    - name: 📤 Upload Fast Test Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: fast-test-report
+        path: reports/fast_test_report.html
 
   notify-slack:
     needs: fast-tests
