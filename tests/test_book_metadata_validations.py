@@ -11,7 +11,7 @@ EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
 
 START_ID = 1
-MAX_ID = 100
+MAX_ID = 3000
 STOP_AFTER_CONSECUTIVE_FAILS = 50
 
 def test_validate_book_metadata():
