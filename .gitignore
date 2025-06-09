@@ -17,6 +17,7 @@ playwright-report/
 # Test result files
 test_reports/*.csv
 test_reports/*.json
+test_reports/*.html
 
 # Node modules if you ever use npm
 node_modules/
