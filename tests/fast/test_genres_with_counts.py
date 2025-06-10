@@ -11,7 +11,7 @@ PASSWORD = "Moniwyse!400"
 @pytest.mark.fast
 def test_quick_check():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, slow_mo=300)
+        browser = p.chromium.launch(headless=True, slow_mo=300)
         page = browser.new_page()
         page.goto(URL)
 

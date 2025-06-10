@@ -1,4 +1,4 @@
 pytest
-pytest-json-report
-pytest-html
 playwright
+pytest-html
+pytest-metadata

@@ -12,7 +12,7 @@ DISCOVER_URL = f"{BASE_URL}/home/discover"
 @pytest.mark.fast
 def test_discover_books():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, slow_mo=200)
+        browser = p.chromium.launch(headless=True, slow_mo=200)
         page = browser.new_page()
 
         # Step 1: Login
