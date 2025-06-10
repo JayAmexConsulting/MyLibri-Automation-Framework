@@ -1,3 +1,4 @@
+import pytest
 from playwright.sync_api import sync_playwright
 import csv, json
 from datetime import datetime
@@ -11,6 +12,7 @@ START_ID = 1
 MAX_ID = 3000
 STOP_AFTER_CONSECUTIVE_FAILS = 30
 
+@pytest.mark.slow
 def test_books_validity():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True), slow_mo=200)
