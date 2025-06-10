@@ -1,3 +1,5 @@
 pytest
 pytest-json-report
 playwright
+pytest-html
+
