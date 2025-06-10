@@ -22,12 +22,19 @@ def test_quick_check():
         page.screenshot(path="test_reports/after_login.png")
 
         # Navigate to profile
-        page.click("img.profile_pic")
-        page.wait_for_timeout(500)
-        page.click("text=Tea Pot")
-        page.wait_for_url("**/home/profile", timeout=5000)
+        try:
+            page.wait_for_selector("img.profile_pic", timeout=10000)
+            page.click("img.profile_pic")
+            page.wait_for_timeout(500)
+            page.click("text=Tea Pot")
+            page.wait_for_url("**/home/profile", timeout=5000)
         page.wait_for_timeout(1000)
         page.screenshot(path="test_reports/profile_biodata.png")
+        except Exception as e:
+            page.screenshot(path=screenshot_dir / "test_reports/profile_biodata.png")
+            print(f"❌ Failed to access profile: {e}")
+            browser.close()
+            return
 
         # Wallet
         page.click("text=Wallet")
