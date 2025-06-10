@@ -9,9 +9,9 @@ EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
 
 @pytest.mark.fast
-def test_quick_check():
+def test_discover_sections_books():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, slow_mo=300)
+        browser = p.chromium.launch(headless=False, slow_mo=3000)
         page = browser.new_page()
         page.goto(URL)
 
