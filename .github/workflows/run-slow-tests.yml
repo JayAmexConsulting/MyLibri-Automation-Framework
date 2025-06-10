@@ -18,10 +18,10 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: 📥 Install Dependencies
+    - name: 🧪 Install dependencies
       run: |
         pip install -r requirements.txt
-        playwright install chromium
+        python -m playwright install --with-deps  # ✅ THIS is the critical step
 
     - name: 🐌 Run Slow Tests
       run: pytest tests/slow --html=reports/slow_test_report.html --self-contained-html -m "slow"

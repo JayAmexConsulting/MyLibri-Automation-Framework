@@ -2,7 +2,7 @@ name: Daily Fast Tests
 
 on:
   schedule:
-    - cron: '0 8 * * *' # Runs daily at 08:00 UTC
+    - cron: '0 8 * * *' # every day at 8AM UTC
   workflow_dispatch:
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 📦 Checkout Repository
+    - name: 📦 Checkout code
       uses: actions/checkout@v4
 
     - name: 🐍 Set up Python
@@ -18,19 +18,20 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: 📥 Install Dependencies
+    - name: 🧪 Install dependencies
       run: |
         pip install -r requirements.txt
-        playwright install chromium
+        python -m playwright install --with-deps  # ✅ THIS is the critical step
 
-    - name: 🚀 Run Fast Tests
+    - name: 🚀 Run fast tests
       run: pytest tests/fast --html=reports/fast_test_report.html --self-contained-html -m "fast"
 
-    - name: 📤 Upload Fast Test Report
+    - name: 📤 Upload report
       uses: actions/upload-artifact@v4
       with:
         name: fast-test-report
         path: reports/fast_test_report.html
+
   notify-slack:
     needs: fast-tests
     if: failure()
