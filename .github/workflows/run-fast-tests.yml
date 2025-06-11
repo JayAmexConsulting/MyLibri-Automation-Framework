@@ -21,7 +21,7 @@ jobs:
     - name: 🧪 Install dependencies
       run: |
         pip install -r requirements.txt
-        python -m playwright install --with-deps  # ✅ THIS is the critical step
+        python -m playwright install --with-deps
 
     - name: 🚀 Run fast tests
       run: pytest tests/fast --html=reports/fast_test_report.html --self-contained-html -m "fast"
@@ -32,19 +32,35 @@ jobs:
         name: fast-test-report
         path: reports/fast_test_report.html
 
-  notify-slack:
+  notify-slack-success:
     needs: fast-tests
-    if: failure()
+    if: success()
     runs-on: ubuntu-latest
-
     steps:
-      - name: 🚨 Slack alert on failure
+      - name: ✅ Slack alert on success
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_COLOR: '#ffcc00'
-          SLACK_TITLE: "⚠️ Fast Test Failure"
+          SLACK_COLOR: '#00cc66'
+          SLACK_TITLE: "✅ Fast Tests Passed"
           SLACK_MESSAGE: |
-            One or more fast tests failed in *${{ github.workflow }}*.
-            Branch: ${{ github.ref }}
-            Commit: ${{ github.sha }}
+            *Fast tests* passed in workflow _${{ github.workflow }}_.
+            Branch: `${{ github.ref }}`
+            Commit: `${{ github.sha }}`
+
+  notify-slack-failure:
+    needs: fast-tests
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: ❌ Slack alert on failure
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_COLOR: '#ff3300'
+          SLACK_TITLE: "❌ Fast Test Failure"
+          SLACK_MESSAGE: |
+            *Fast tests* failed in workflow _${{ github.workflow }}_.
+            Branch: `${{ github.ref }}`
+            Commit: `${{ github.sha }}`
+
