@@ -2,7 +2,7 @@ name: Weekly Slow Tests
 
 on:
   schedule:
-    - cron: '0 8 * * 1' # Runs weekly on Mondays at 08:00 UTC
+    - cron: '0 8 * * 1' # every Monday at 08:00 UTC
   workflow_dispatch:
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 📦 Checkout Repository
+    - name: 📦 Checkout code
       uses: actions/checkout@v4
 
     - name: 🐍 Set up Python
@@ -21,29 +21,45 @@ jobs:
     - name: 🧪 Install dependencies
       run: |
         pip install -r requirements.txt
-        python -m playwright install --with-deps  # ✅ THIS is the critical step
+        python -m playwright install --with-deps
 
-    - name: 🐌 Run Slow Tests
+    - name: 🐌 Run slow tests
       run: pytest tests/slow --html=reports/slow_test_report.html --self-contained-html -m "slow"
 
-    - name: 📤 Upload Slow Test Report
+    - name: 📤 Upload slow test report
       uses: actions/upload-artifact@v4
       with:
         name: slow-test-report
         path: reports/slow_test_report.html
-  notify-slack:
-    needs: slow-tests
-    if: failure()
-    runs-on: ubuntu-latest
 
+  notify-slack-success:
+    needs: slow-tests
+    if: success()
+    runs-on: ubuntu-latest
     steps:
-      - name: 🚨 Slack alert on failure
+      - name: ✅ Slack alert on success
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_COLOR: '#ff0000'
+          SLACK_COLOR: '#00cc66'
+          SLACK_TITLE: "✅ Slow Tests Passed"
+          SLACK_MESSAGE: |
+            *Slow tests* passed in workflow _${{ github.workflow }}_.
+            Branch: `${{ github.ref }}`
+            Commit: `${{ github.sha }}`
+
+  notify-slack-failure:
+    needs: slow-tests
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: ❌ Slack alert on failure
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_COLOR: '#ff3300'
           SLACK_TITLE: "❌ Slow Test Failure"
           SLACK_MESSAGE: |
-            One or more slow tests failed in *${{ github.workflow }}*.
-            Branch: ${{ github.ref }}
-            Commit: ${{ github.sha }}
+            *Slow tests* failed in workflow _${{ github.workflow }}_.
+            Branch: `${{ github.ref }}`
+            Commit: `${{ github
