@@ -10,7 +10,7 @@ EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
 
 START_ID = 1
-MAX_ID = 20
+MAX_ID = 20  # Set higher like 3000 for production runs
 STOP_AFTER_CONSECUTIVE_FAILS = 50
 
 @pytest.mark.slow
@@ -19,6 +19,7 @@ def test_long_running():
         browser = p.chromium.launch(headless=True, slow_mo=200)
         page = browser.new_page()
 
+        # ✅ Step 1: Login
         print("🔐 Logging in...")
         page.goto(URL)
         page.click("text=Sign In")
@@ -27,6 +28,10 @@ def test_long_running():
         page.fill("input[type='password']", PASSWORD)
         page.click("button:has-text('Login')")
         page.wait_for_timeout(3000)
+
+        # ✅ Validate login succeeded
+        if "dashboard" not in page.url:
+            raise Exception("❌ Login failed, dashboard not reached")
 
         found_books = []
         failures_in_a_row = 0
@@ -39,18 +44,20 @@ def test_long_running():
                 page.goto(book_url, timeout=8000)
                 page.wait_for_timeout(500)
 
+                # Metadata placeholders
                 book_title = ""
                 author_name = ""
 
                 try:
+                    page.wait_for_selector("div.book-details h1.book-name", timeout=3000)
                     book_title = page.locator("div.book-details h1.book-name").first.text_content().strip()
-                except:
-                    book_title = ""
+                except Exception as e:
+                    print(f"\n⚠️ Title not found for ID {book_id}: {e}")
 
                 try:
                     author_name = page.locator("div.book-details p.author-name").first.text_content().strip()
-                except:
-                    author_name = ""
+                except Exception as e:
+                    print(f"\n⚠️ Author not found for ID {book_id}: {e}")
 
                 if not book_title:
                     print("❌ No valid title found")
@@ -71,9 +78,10 @@ def test_long_running():
                     break
 
             except Exception as e:
-                print(f"❌ Error: {str(e)}")
+                print(f"❌ Error loading book page {book_url}: {str(e)}")
                 failures_in_a_row += 1
 
+        # ✅ Save output files
         Path("test_reports").mkdir(exist_ok=True)
         Path("docs").mkdir(exist_ok=True)
 
@@ -96,4 +104,8 @@ def test_long_running():
         print(f"\n📦 Done: {len(found_books)} books found")
         print(f"📄 CSV: {csv_path}")
         print(f"📄 JSON: {json_path}")
+
+        # ✅ Safety check
+        assert found_books, "❌ No books were found or extracted"
+
         browser.close()

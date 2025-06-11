@@ -21,7 +21,7 @@ def test_long_running():
     failures_in_a_row = 0
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, slow_mo=100)
+        browser = p.chromium.launch(headless=True, slow_mo=200)
         page = browser.new_page()
 
         # ✅ Login first
@@ -41,7 +41,7 @@ def test_long_running():
 
             try:
                 page.goto(book_url, timeout=8000)
-                page.wait_for_timeout(800)
+                page.wait_for_timeout(500)
 
                 title = ""
                 author = ""
