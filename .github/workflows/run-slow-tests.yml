@@ -62,4 +62,4 @@ jobs:
           SLACK_MESSAGE: |
             *Slow tests* failed in workflow _${{ github.workflow }}_.
             Branch: `${{ github.ref }}`
-            Commit: `${{ github
+            Commit: `${{ github.sha }}`
