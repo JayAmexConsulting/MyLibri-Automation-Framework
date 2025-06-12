@@ -8,6 +8,7 @@ on:
 jobs:
   slow-tests:
     runs-on: ubuntu-latest
+    environment: production
 
     steps:
     - name: 📦 Checkout code
