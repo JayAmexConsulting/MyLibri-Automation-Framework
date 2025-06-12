@@ -2,13 +2,12 @@ name: Daily Fast Tests
 
 on:
   schedule:
-    - cron: '0 8 * * *' # every day at 8AM UTC
+    - cron: '0 8 * * *'  # 8AM UTC daily
   workflow_dispatch:
 
 jobs:
   fast-tests:
     runs-on: ubuntu-latest
-    environment: production
 
     steps:
     - name: 📦 Checkout code
@@ -33,35 +32,36 @@ jobs:
         name: fast-test-report
         path: reports/fast_test_report.html
 
-  notify-slack-success:
+  notify-success:
     needs: fast-tests
     if: success()
     runs-on: ubuntu-latest
     steps:
-      - name: ✅ Slack alert on success
-        uses: rtCamp/action-slack-notify@v2
-        env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_COLOR: '#00cc66'
-          SLACK_TITLE: "✅ Fast Tests Passed"
-          SLACK_MESSAGE: |
-            *Fast tests* passed in workflow _${{ github.workflow }}_.
-            Branch: `${{ github.ref }}`
-            Commit: `${{ github.sha }}`
+    - name: ✅ Notify Slack on success
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_COLOR: '#2eb886'
+        SLACK_TITLE: "✅ Fast Tests Passed"
+        SLACK_MESSAGE: |
+          *Fast tests* passed ✅  
+          Workflow: _${{ github.workflow }}_  
+          Branch: `${{ github.ref }}`  
+          Commit: `${{ github.sha }}`
 
-  notify-slack-failure:
+  notify-failure:
     needs: fast-tests
     if: failure()
     runs-on: ubuntu-latest
     steps:
-      - name: ❌ Slack alert on failure
-        uses: rtCamp/action-slack-notify@v2
-        env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_COLOR: '#ff3300'
-          SLACK_TITLE: "❌ Fast Test Failure"
-          SLACK_MESSAGE: |
-            *Fast tests* failed in workflow _${{ github.workflow }}_.
-            Branch: `${{ github.ref }}`
-            Commit: `${{ github.sha }}`
-
+    - name: ❌ Notify Slack on failure
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_COLOR: '#e01e5a'
+        SLACK_TITLE: "❌ Fast Test Failure"
+        SLACK_MESSAGE: |
+          *Fast tests* failed ❌  
+          Workflow: _${{ github.workflow }}_  
+          Branch: `${{ github.ref }}`  
+          Commit: `${{ github.sha }}`
