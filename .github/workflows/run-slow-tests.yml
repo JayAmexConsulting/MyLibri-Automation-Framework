@@ -1,6 +1,11 @@
 name: Weekly Slow Tests
 
 on:
+  push:
+    paths:
+      - 'tests/slow/**'
+      - '.github/workflows/run-slow-tests.yml'
+      - 'requirements.txt'
   schedule:
     - cron: '0 8 * * 1' # Mondays at 8AM UTC
   workflow_dispatch:
