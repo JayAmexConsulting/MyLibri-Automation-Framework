@@ -1,18 +1,19 @@
-name: 🔔 Test Slack Webhook
+name: Test Slack Notification
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # Trigger manually from GitHub Actions tab
 
 jobs:
-  send-test-alert:
+  slack-test:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Send test Slack message
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-      run: |
-        curl -X POST -H 'Content-type: application/json' --data '{
-          "text": ":white_check_mark: Slack webhook test from GitHub Actions! 🎉",
-          "username": "GitHub CI Bot",
-          "icon_emoji": ":robot_face:"
-        }' $SLACK_WEBHOOK
+      - name: 🔔 Send Slack notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_COLOR: '#36a64f'
+          SLACK_TITLE: "✅ Slack Test Success"
+          SLACK_MESSAGE: |
+            This is a test message from GitHub Actions confirming Slack integration is working.
+            Time: ${{ github.event.repository.updated_at }}
