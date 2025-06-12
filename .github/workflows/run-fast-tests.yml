@@ -1,6 +1,16 @@
 name: Daily Fast Tests
 
 on:
+  push:
+    paths:
+      - 'tests/fast/**'
+      - '.github/workflows/fast-test.yml'
+      - 'requirements.txt'
+  schedule:
+    - cron: '0 8 * * *' # Every day at 8AM UTC
+  workflow_dispatch:
+
+on:
   schedule:
     - cron: '0 8 * * *'  # 8AM UTC daily
   workflow_dispatch:

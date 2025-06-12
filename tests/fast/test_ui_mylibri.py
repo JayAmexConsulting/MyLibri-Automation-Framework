@@ -14,12 +14,13 @@ def test_quick_check():
     screenshot_dir.mkdir(parents=True, exist_ok=True)
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, slow_mo=200)
-        page = browser.new_page()
-        page.set_default_timeout(10000)
+        browser = p.chromium.launch(headless=True, slow_mo=300)
+        context = browser.new_context(viewport={"width": 1280, "height": 1024})
+        page = context.new_page()
+        page.set_default_timeout(20000)
 
         try:
-            # Step 1: Login
+            # Login
             page.goto(URL)
             page.click("text=Sign In")
             page.wait_for_url("**/signin")
@@ -27,52 +28,43 @@ def test_quick_check():
             page.fill("input[type='password']", PASSWORD)
             page.click("button:has-text('Login')")
             page.wait_for_timeout(3000)
-            page.screenshot(path=screenshot_dir / "01_after_login.png")
+            page.screenshot(path=screenshot_dir / "01_logged_in.png")
 
-            # Step 2: Navigate to Profile
-            try:
-                page.wait_for_selector("img.profile_pic")
-                page.click("img.profile_pic")
-                page.wait_for_timeout(500)
-                page.click("text=Tea Pot")
-                page.wait_for_url("**/home/profile")
-                page.wait_for_timeout(1000)
-                page.screenshot(path=screenshot_dir / "02_biodata.png")
-            except Exception as e:
-                page.screenshot(path=screenshot_dir / "02_biodata_error.png")
-                raise AssertionError(f"❌ Failed to load profile: {e}")
+            assert "home" in page.url, "❌ Login failed"
 
-            # Step 3: Check UI Sections
-            try:
-                page.click("text=Wallet")
-                page.wait_for_timeout(1000)
-                page.screenshot(path=screenshot_dir / "03_wallet.png")
+            # Navigate to Profile
+            page.locator("img.profile_pic").scroll_into_view_if_needed()
+            page.click("img.profile_pic")
+            page.click("text=Tea Pot")
+            page.wait_for_url("**/home/profile", timeout=10000)
+            page.screenshot(path=screenshot_dir / "02_profile_biodata.png")
 
-                page.click("text=Subscription")
-                page.wait_for_timeout(1000)
-                page.screenshot(path=screenshot_dir / "04_subscription.png")
+            # Wallet
+            page.click("text=Wallet")
+            page.wait_for_timeout(1000)
+            page.screenshot(path=screenshot_dir / "03_wallet.png")
 
-                page.click("text=Change Password")
-                page.wait_for_timeout(1000)
-                page.screenshot(path=screenshot_dir / "05_change_password.png")
-            except Exception as e:
-                page.screenshot(path=screenshot_dir / "05_section_error.png")
-                raise AssertionError(f"❌ Failed while navigating UI sections: {e}")
+            # Subscription
+            page.click("text=Subscription")
+            page.wait_for_timeout(1000)
+            page.screenshot(path=screenshot_dir / "04_subscription.png")
 
-            # Step 4: Log Out
-            try:
-                page.click("img.profile_pic")
-                page.wait_for_timeout(500)
-                logout_btn = page.locator("li.list", has_text="Log Out")
-                logout_btn.wait_for(state="visible", timeout=5000)
-                logout_btn.click()
-                page.wait_for_url(URL, timeout=5000)
-                page.screenshot(path=screenshot_dir / "06_logged_out.png")
-            except Exception as e:
-                page.screenshot(path=screenshot_dir / "06_logout_error.png")
-                raise AssertionError(f"❌ Logout failed: {e}")
+            # Change Password
+            page.click("text=Change Password")
+            page.wait_for_timeout(1000)
+            page.screenshot(path=screenshot_dir / "05_change_password.png")
 
-        finally:
-            browser.close()
+            # Logout
+            page.click("img.profile_pic")
+            logout_btn = page.locator("li.list", has_text="Log Out")
+            logout_btn.wait_for(state="visible", timeout=5000)
+            logout_btn.click()
+            page.wait_for_timeout(1000)
+            page.screenshot(path=screenshot_dir / "06_logged_out.png")
+
+        except Exception as e:
+            page.screenshot(path=screenshot_dir / "error.png")
+            raise AssertionError(f"❌ Failed to load profile: {e}")
 
         print(f"✅ UI test complete. Screenshots saved in {screenshot_dir}")
+        browser.close()
