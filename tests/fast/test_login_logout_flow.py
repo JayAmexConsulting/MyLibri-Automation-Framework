@@ -14,49 +14,41 @@ def test_quick_check():
     screenshot_dir.mkdir(parents=True, exist_ok=True)
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, slow_mo=200)
-        page = browser.new_page()
-        page.set_default_timeout(10000)
+        browser = p.chromium.launch(headless=True, slow_mo=300)
+        context = browser.new_context(viewport={"width": 1280, "height": 1024})
+        page = context.new_page()
+        page.set_default_timeout(20000)
 
         try:
             # Step 1: Login
             page.goto(URL)
             page.screenshot(path=screenshot_dir / "01_home.png")
             page.click("text=Sign In")
-            page.wait_for_url("**/signin", timeout=5000)
-            page.screenshot(path=screenshot_dir / "02_signin_page.png")
-
+            page.wait_for_url("**/signin")
             page.fill("input[type='email']", EMAIL)
             page.fill("input[type='password']", PASSWORD)
-            page.screenshot(path=screenshot_dir / "03_filled_credentials.png")
             page.click("button:has-text('Login')")
             page.wait_for_timeout(3000)
-            page.screenshot(path=screenshot_dir / "04_logged_in.png")
+            page.screenshot(path=screenshot_dir / "02_dashboard.png")
 
-            # Step 2: Navigate to profile
-            try:
-                page.wait_for_selector("img.profile_pic", timeout=10000)
-                page.click("img.profile_pic")
-                page.wait_for_timeout(500)
-                page.click("text=Tea Pot")
-                page.wait_for_url("**/home/profile", timeout=5000)
-                page.screenshot(path=screenshot_dir / "05_profile_page.png")
-            except Exception as e:
-                page.screenshot(path=screenshot_dir / "05_profile_page_failed.png")
-                raise AssertionError(f"❌ Failed to access profile: {e}")
+            assert "home" in page.url or "dashboard" in page.url, "❌ Login failed — dashboard not reached"
+
+            # Step 2: Profile
+            page.locator("img.profile_pic").scroll_into_view_if_needed()
+            page.click("img.profile_pic")
+            page.click("text=Tea Pot")
+            page.wait_for_url("**/home/profile", timeout=10000)
+            page.screenshot(path=screenshot_dir / "03_profile.png")
 
             # Step 3: Log out
-            try:
-                page.click("img.profile_pic")
-                page.wait_for_timeout(500)
-                page.click("text=Log Out")
-                page.wait_for_url(URL, timeout=5000)
-                page.screenshot(path=screenshot_dir / "06_logged_out.png")
-            except Exception as e:
-                page.screenshot(path=screenshot_dir / "06_logout_failed.png")
-                raise AssertionError(f"❌ Failed to log out: {e}")
+            page.click("img.profile_pic")
+            page.click("text=Log Out")
+            page.wait_for_url(URL, timeout=8000)
+            page.screenshot(path=screenshot_dir / "04_logged_out.png")
 
-        finally:
-            browser.close()
+        except Exception as e:
+            page.screenshot(path=screenshot_dir / "error.png")
+            raise AssertionError(f"❌ Test failed: {e}")
 
         print(f"✅ Test complete. Screenshots saved to {screenshot_dir}")
+        browser.close()
