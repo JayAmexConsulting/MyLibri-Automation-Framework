@@ -9,7 +9,7 @@ BOOK_URL_BASE = f"{URL}/home/books"
 EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
 START_ID = 1
-MAX_ID = 20
+MAX_ID = 3000
 STOP_AFTER_CONSECUTIVE_FAILS = 50
 
 @pytest.mark.slow
