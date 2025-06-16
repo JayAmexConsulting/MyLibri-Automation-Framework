@@ -1,72 +1,99 @@
 name: Weekly Slow Tests
 
 on:
-  push:
-    paths:
-      - 'tests/slow/**'
-      - '.github/workflows/run-slow-tests.yml'
-      - 'requirements.txt'
   schedule:
-    - cron: '0 8 * * 1' # Mondays at 8AM UTC
+    - cron: '0 8 * * 1' # Mondays at 5AM UTC
   workflow_dispatch:
 
 jobs:
-  slow-tests:
+  slow-tests-part1:
     runs-on: ubuntu-latest
-
     steps:
-    - name: 📦 Checkout code
-      uses: actions/checkout@v4
+      - name: 📦 Checkout code
+        uses: actions/checkout@v4
 
-    - name: 🐍 Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
-    - name: 🧪 Install dependencies
-      run: |
-        pip install -r requirements.txt
-        python -m playwright install --with-deps
+      - name: 📥 Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps
 
-    - name: 🐢 Run slow tests
-      run: pytest tests/slow --html=reports/slow_test_report.html --self-contained-html -m "slow"
+      - name: 🐢 Run Batch 1 (sweep + metadata)
+        run: |
+          pytest tests/slow/test_book_id_sweep_part1.py \
+                 tests/slow/test_book_id_sweep_part2.py \
+                 --html=reports/slow_batch1_report.html --self-contained-html
 
-    - name: 📤 Upload report
-      uses: actions/upload-artifact@v4
-      with:
-        name: slow-test-report
-        path: reports/slow_test_report.html
+      - name: 📤 Upload report (Batch 1)
+        uses: actions/upload-artifact@v4
+        with:
+          name: slow-test-batch1-report
+          path: reports/slow_batch1_report.html
+
+  slow-tests-part2:
+    needs: slow-tests-part1  # optional: run sequentially
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📦 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 📥 Install dependencies
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps
+
+      - name: 🐢 Run Batch 2 (links + genres)
+        run: |
+          pytest tests/slow/test_book_metadata_validations_part1.py \
+                 tests/slow/test_book_metadata_validations_part2.py \
+                 tests/slow/test_genres_books_metadata.py \
+                 --html=reports/slow_batch2_report.html --self-contained-html
+
+      - name: 📤 Upload report (Batch 2)
+        uses: actions/upload-artifact@v4
+        with:
+          name: slow-test-batch2-report
+          path: reports/slow_batch2_report.html
 
   notify-success:
-    needs: slow-tests
+    needs: [slow-tests-part1, slow-tests-part2]
     if: success()
     runs-on: ubuntu-latest
     steps:
-    - name: ✅ Notify Slack on success
-      uses: rtCamp/action-slack-notify@v2
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_COLOR: '#2eb886'
-        SLACK_TITLE: "✅ Slow Tests Passed"
-        SLACK_MESSAGE: |
-          *Slow tests* passed ✅  
-          Workflow: _${{ github.workflow }}_  
-          Branch: `${{ github.ref }}`  
-          Commit: `${{ github.sha }}`
+      - name: ✅ Notify Slack on success
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_COLOR: '#2eb886'
+          SLACK_TITLE: "✅ Slow Tests Passed"
+          SLACK_MESSAGE: |
+            *Slow tests* (both batches) passed ✅  
+            Workflow: _${{ github.workflow }}_  
+            Branch: `${{ github.ref }}`  
+            Commit: `${{ github.sha }}`
 
   notify-failure:
-    needs: slow-tests
+    needs: [slow-tests-part1, slow-tests-part2]
     if: failure()
     runs-on: ubuntu-latest
     steps:
-    - name: ❌ Notify Slack on failure
-      uses: rtCamp/action-slack-notify@v2
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_COLOR: '#e01e5a'
-        SLACK_TITLE: "❌ Slow Test Failure"
-        SLACK_MESSAGE: |
-          *Slow tests* failed ❌  
-          Workflow: _${{ github.workflow }}_  
-          Branch: `${{ github.ref }}`  
-          Commit: `${{ github.sha }}`
+      - name: ❌ Notify Slack on failure
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_COLOR: '#e01e5a'
+          SLACK_TITLE: "❌ Slow Test Failure"
+          SLACK_MESSAGE: |
+            *Slow tests* failed ❌  
+            Workflow: _${{ github.workflow }}_  
+            Branch: `${{ github.ref }}`  
+            Commit: `${{ github.sha }}`

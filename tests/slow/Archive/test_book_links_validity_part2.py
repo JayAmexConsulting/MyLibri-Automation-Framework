@@ -8,12 +8,12 @@ URL = "https://mylibribooks.com"
 BOOK_URL_BASE = f"{URL}/home/books"
 EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
-START_ID = 1
+START_ID = 1501
 MAX_ID = 3000
 STOP_AFTER_CONSECUTIVE_FAILS = 30
 
 @pytest.mark.slow
-def test_books_validity():
+def test_books_validity_part2():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True, slow_mo=200)
         page = browser.new_page()
