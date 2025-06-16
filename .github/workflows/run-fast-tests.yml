@@ -7,7 +7,7 @@ on:
       - '.github/workflows/fast-test.yml'
       - 'requirements.txt'
   schedule:
-    - cron: '0 8 * * *' # Every day at 8AM UTC
+    - cron: '0 8 * * *' # Every day at 4AM UTC
   workflow_dispatch:
 
 jobs:

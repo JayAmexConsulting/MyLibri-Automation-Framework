@@ -10,11 +10,11 @@ EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
 
 START_ID = 1
-MAX_ID = 3000  # Adjust this as needed
+MAX_ID = 1500
 STOP_AFTER_CONSECUTIVE_FAILS = 30
 
 @pytest.mark.slow
-def test_long_running():
+def test_long_running_part1():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True, slow_mo=200)
         page = browser.new_page()
