@@ -1,109 +1,141 @@
 import pytest
-from playwright.sync_api import sync_playwright, expect
-from pathlib import Path
-from datetime import datetime
 import re
+import os
 import logging
+from datetime import datetime
+from pathlib import Path
+from playwright.sync_api import Page, expect, sync_playwright
 
 # Set up logging
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(name)s:%(lineno)d - %(message)s')
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s:%(lineno)d - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 logger = logging.getLogger(__name__)
 
-# Constants (Using INVALID credentials for this specific test)
+# Constants
 URL = "https://mylibribooks.com"
 LOGIN_URL = f"{URL}/signin"
-# !!! IMPORTANT: Use truly invalid credentials for this test !!!
-INVALID_EMAIL = "nobody_noone@gmail.com" # As per your screenshot
-INVALID_PASSWORD = "wrongpassword12345" # Ensure this is unique and wrong
-TIMEOUT = 45000 # Overall timeout for page operations
 
-# --- Specific Device Configuration ---
+# --- REQUIRED: Specify the invalid email and invalid password directly in the script ---
+INVALID_EMAIL = "nobody_noone@gmail.com" # As per your original script
+INVALID_PASSWORD = "wrongpassword12345" # Ensure this is unique and wrong
+
+# TARGET_DEVICE_NAME is typically configured in pytest.ini's [pytest-playwright] section.
 TARGET_DEVICE_NAME = 'iPhone 13'
 
+# Define a fixture for mobile context to ensure emulation and headful mode for observation
+@pytest.fixture(scope="function")
+def mobile_page(playwright, browser_type): # 'browser_type' comes from pytest-playwright
+    # Get the Playwright device descriptor for iPhone 13
+    try:
+        # Access devices from the 'playwright' object directly
+        iphone_13 = playwright.devices[TARGET_DEVICE_NAME]
+    except KeyError:
+        logger.warning(f"Device '{TARGET_DEVICE_NAME}' not found in Playwright's built-in devices. Using default mobile settings.")
+        # Fallback to generic mobile settings if specific device is not found
+        iphone_13 = {
+            # CORRECTED SYNTAX: Changed "13.1.1" to '13.1.1' to fix previous SyntaxError
+            "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version='13.1.1' Mobile/15E148 Safari/604.1",
+            "viewport": {"width": 375, "height": 667},
+            "is_mobile": True,
+            "has_touch": True,
+            "device_scale_factor": 2
+        }
+
+    # Launch a new browser instance explicitly with headless=False for observation
+    # This ensures the browser window is visible for debugging.
+    browser_instance = browser_type.launch(headless=False)
+    context = browser_instance.new_context(**iphone_13)
+    # The original script had a high TIMEOUT. Set default timeout for the context if needed.
+    # context.set_default_timeout(45000) # Re-add if 45s timeout is consistently required
+    # page.set_default_navigation_timeout(45000) # Re-add if 45s nav timeout is consistently required
+    page = context.new_page()
+    yield page
+    page.close()
+    context.close()
+    browser_instance.close()
+
+
 @pytest.mark.mobile
-def test_mobile_invalid_login():
+def test_mobile_invalid_login(mobile_page: Page): # Use the custom mobile_page fixture
     """
     Tests the mobile login flow with invalid credentials (non-existent user),
-    expecting an error message and no successful login.
+    expecting specific error messages and no successful login.
     """
+    page = mobile_page # Assign the page from the fixture
+
+    # The email and password are now directly specified, no need to check os.getenv
+    logger.info(f"Using specified invalid email: '{INVALID_EMAIL}' and invalid password.")
+
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     sanitized_device_name = re.sub(r'[^\w\-_\.]', '', TARGET_DEVICE_NAME)
     test_report_dir = Path(f"test_reports/mobile_invalid_login_{sanitized_device_name}_{timestamp}")
     test_report_dir.mkdir(parents=True, exist_ok=True)
 
-    browser = None
-    page = None
-
     try:
-        with sync_playwright() as p:
-            device_config = p.devices[TARGET_DEVICE_NAME]
-            browser_type = p.chromium
+        logger.info(f"Starting invalid login test on device: {TARGET_DEVICE_NAME}")
 
-            browser = browser_type.launch(headless=False, slow_mo=100)
-            context = browser.new_context(
-                **device_config,
-                locale='en-US',
-                timezone_id='America/Los_Angeles',
-                java_script_enabled=True,
-                ignore_https_errors=True
-            )
-            context.set_default_timeout(TIMEOUT)
-            page = context.new_page()
-            page.set_default_navigation_timeout(TIMEOUT)
+        # --- Step 1: Navigate directly to Login Page ---
+        logger.info(f"Navigating directly to login page: {LOGIN_URL}")
+        # Use "domcontentloaded" as it was successful in previous scripts for initial page load.
+        page.goto(LOGIN_URL, wait_until="domcontentloaded")
+        
+        # Taking a screenshot of the initial login page
+        page.screenshot(path=test_report_dir / f"01_login_page_initial_{sanitized_device_name}.png")
+        # Assert that the URL is indeed the signin/login page
+        expect(page).to_have_url(re.compile("signin|login", re.IGNORECASE))
+        logger.info("On sign-in page. Proceeding with invalid credentials.")
 
-            logger.info(f"Starting invalid login test on device: {TARGET_DEVICE_NAME} ({browser_type.name})")
+        # --- Step 2: Fill Invalid Login Credentials ---
+        logger.info(f"Filling email: '{INVALID_EMAIL}' and password.")
+        email_input = page.get_by_label("Email").or_(page.locator("input[type='email']"))
+        password_input = page.get_by_label("Password").or_(page.locator("input[type='password']"))
+        
+        # Directly fill the fields. Playwright's fill method automatically waits for the element to be ready.
+        email_input.fill(INVALID_EMAIL)
+        password_input.fill(INVALID_PASSWORD)
+        logger.info(f"Email and password fields filled.")
 
-            # --- Step 1: Navigate directly to Login Page ---
-            logger.info(f"Navigating directly to login page: {LOGIN_URL}")
-            page.goto(LOGIN_URL, wait_until="domcontentloaded")
-            page.screenshot(path=test_report_dir / f"01_login_page_initial_{sanitized_device_name}.png")
-            expect(page).to_have_url(re.compile("signin|login", re.IGNORECASE))
-            logger.info("On sign-in page. Proceeding with invalid credentials.")
+        # --- Step 3: Click Login Button ---
+        login_button = page.get_by_role("button", name=re.compile("login|sign in", re.IGNORECASE))
+        # No explicit pre-click expect().to_be_visible/enabled needed here, Playwright's click also waits.
+        login_button.click()
+        logger.info("Clicked login button with invalid credentials.")
 
-            # --- Step 2: Fill Invalid Login Credentials ---
-            logger.info("Filling invalid login credentials.")
-            page.get_by_label("Email").or_(page.locator("input[type='email']")).fill(INVALID_EMAIL)
-            page.get_by_label("Password").or_(page.locator("input[type='password']")).fill(INVALID_PASSWORD)
+        # --- Step 4: Verify Error Messages and No Redirection ---
+        logger.info("Verifying that error messages are displayed and login is unsuccessful.")
 
-            # --- Step 3: Click Login Button ---
-            login_button = page.get_by_role("button", name=re.compile("login|sign in", re.IGNORECASE))
-            login_button.click()
-            logger.info("Clicked login button with invalid credentials.")
+        # IMPORTANT: Based on previous successful test, assert each specific error message.
+        # This avoids strict mode violation if both messages appear.
+        # The messages "User does not exist" and "Please check your email and password"
+        # were observed for valid email/wrong password.
+        # Assuming the same messages for invalid email/invalid password based on provided image_b1aeab.png and image_b1b18b.png.
 
-            # --- Step 4: Verify Error Message and No Redirection ---
-            logger.info("Verifying that an error message is displayed and login is unsuccessful.")
+        # Assert the first part of the error message
+        expect(page.get_by_text("User does not exist")).to_be_visible(timeout=10000) #
+        logger.info("Error message 'User does not exist' is visible.")
 
-            # IMPORTANT DEBUG STEP: Screenshot and page source for further analysis if needed
-            # This is still valuable if the new locator fails or for future debugging.
-            page.screenshot(path=test_report_dir / f"DEBUG_02_login_failed_before_error_check_{sanitized_device_name}.png", full_page=True)
-            logger.info(f"DEBUG: Screenshot taken before error message assertion: {test_report_dir / f'DEBUG_02_login_failed_before_error_check_{sanitized_device_name}.png'}")
-            with open(test_report_dir / f"DEBUG_02_login_failed_page_source_{sanitized_device_name}.html", "w", encoding="utf-8") as f:
-                f.write(page.content())
-            logger.info(f"DEBUG: Page source dumped for inspection: {test_report_dir / f'DEBUG_02_login_failed_page_source_{sanitized_device_name}.html'}")
+        # Assert the second part of the error message
+        expect(page.get_by_text("Please check your email and password")).to_be_visible(timeout=10000) #
+        logger.info("Error message 'Please check your email and password' is visible.")
 
-            # --- REVISED ERROR MESSAGE LOCATOR based on the screenshot and the new understanding ---
-            # Targeting the main red banner error message using a regex for flexibility
-            # This covers "User does not exist" and the subsequent text, even if split.
-            error_message_locator = page.get_by_text(re.compile("User does not exist", re.IGNORECASE))
+        # In your provided image_b1aeab.png, there are also "Please input a valid email" and "Please input a valid password"
+        # validation messages under the input fields. We can add assertions for these as well to be thorough.
+        expect(page.get_by_text("Please input a valid email")).to_be_visible(timeout=5000)
+        logger.info("Field-level error 'Please input a valid email' is visible.")
 
-            # Assert that the error message is visible. The expect.to_be_visible() has its own timeout.
-            expect(error_message_locator).to_be_visible(timeout=10000)
-            logger.info(f"Main error message displayed: '{error_message_locator.text_content()}'")
-
-            # Additionally, check for the field-level validation for "invalid email"
-            # This is a good secondary check for this specific 'non-existent user' scenario.
-            field_error_locator = page.get_by_text("Please input a valid email")
-            expect(field_error_locator).to_be_visible(timeout=5000)
-            logger.info(f"Field-level error message displayed: '{field_error_locator.text_content()}'")
+        expect(page.get_by_text("Please input a valid password")).to_be_visible(timeout=5000)
+        logger.info("Field-level error 'Please input a valid password' is visible.")
 
 
-            # Assert that the URL *remains* on the login page (no redirection to dashboard/home)
-            expect(page).to_have_url(re.compile("signin|login", re.IGNORECASE))
-            logger.info("Verified URL remains on the login page, confirming no successful login.")
+        # Assert no redirection: URL remains on login page
+        expect(page).to_have_url(re.compile(f"^{re.escape(URL)}/(signin|login)/?$", re.IGNORECASE), timeout=5000)
+        logger.info("Verified URL remains on the login page, confirming no successful login.")
 
-            page.screenshot(path=test_report_dir / f"03_login_failed_final_{sanitized_device_name}.png")
-            logger.info("Invalid login test completed successfully: error messages displayed and no login.")
+        page.screenshot(path=test_report_dir / f"03_login_failed_final_{sanitized_device_name}.png")
+        logger.info("Invalid login test completed successfully: error messages displayed and no login.")
 
     except Exception as e:
         logger.error(f"❌ Test failed unexpectedly for {TARGET_DEVICE_NAME}: {e}")
@@ -114,12 +146,4 @@ def test_mobile_invalid_login():
                     f.write(page.content())
             except Exception as se:
                 logger.warning(f"Could not take final error screenshot for {sanitized_device_name}: {se}")
-        raise
-
-    finally:
-        if browser:
-            try:
-                browser.close()
-                logger.info(f"Browser for {TARGET_DEVICE_NAME} closed successfully.")
-            except Exception as ce:
-                logger.warning(f"Error closing browser for {TARGET_DEVICE_NAME}: {ce}")
+        raise # Re-raise the exception to mark the test as failed by pytest
