@@ -16,20 +16,20 @@ def test_quick_check():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True, slow_mo=200)
         page = browser.new_page()
-        page.set_default_timeout(10000)
+        page.set_default_timeout(15000)
 
-        # Login
+        # --- Login ---
         page.goto(URL)
         page.click("text=Sign In")
         page.wait_for_url("**/signin")
         page.fill("input[type='email']", EMAIL)
         page.fill("input[type='password']", PASSWORD)
         page.click("button:has-text('Login')")
-        page.wait_for_timeout(2000)
+        page.wait_for_url("**/home/dashboard", timeout=20000)
 
-        # Go to Genre Page
+        # --- Genre Page ---
         page.goto(f"{URL}/home/genre")
-        page.wait_for_selector("div.genre-wrapper ul li", timeout=10000)
+        page.wait_for_selector("div.genre-wrapper ul li")
 
         genre_elements = page.locator("div.genre-wrapper ul li")
         genre_count = genre_elements.count()
@@ -40,19 +40,33 @@ def test_quick_check():
         for i in range(genre_count):
             element = genre_elements.nth(i)
             try:
-                element.wait_for(state="visible", timeout=3000)
                 genre_name = element.inner_text().strip()
-                if genre_name:
-                    print(f"📚 {genre_name}: 0 book(s)")  # Placeholder — replace if you get real counts
-                    genre_results.append({
-                        "genre": genre_name,
-                        "count": 0
-                    })
+                # Click into genre
+                element.click()
+                page.wait_for_load_state("networkidle")
+
+                # Wait for books to appear (adjust selector to actual DOM)
+                book_elements = page.locator("div.book-card, div.book-item, .book")  
+                book_count = book_elements.count()
+
+                print(f"📚 {genre_name}: {book_count} book(s)")
+                genre_results.append({
+                    "genre": genre_name,
+                    "count": book_count
+                })
+
+                # Go back to genre page
+                page.goto(f"{URL}/home/genre")
+                page.wait_for_selector("div.genre-wrapper ul li")
+
+                # Refresh locator after navigation
+                genre_elements = page.locator("div.genre-wrapper ul li")
+
             except Exception as e:
                 print(f"⚠️ Skipping genre index {i}: {e}")
                 continue
 
-        # Save results
+        # --- Export ---
         csv_path = f"test_reports/genre_book_counts_{timestamp}.csv"
         json_path = f"test_reports/genre_book_counts_{timestamp}.json"
         html_path = f"test_reports/genre_book_counts_{timestamp}.html"
