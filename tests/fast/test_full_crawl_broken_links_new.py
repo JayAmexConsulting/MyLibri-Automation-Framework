@@ -1,6 +1,6 @@
 import pytest
 from playwright.sync_api import sync_playwright
-import requests, csv, json
+import csv, json
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
