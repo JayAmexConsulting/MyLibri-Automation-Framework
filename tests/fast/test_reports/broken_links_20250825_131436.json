@@ -1,0 +1,77 @@
+[
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/about",
+    "status": 200
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/faq",
+    "status": 200
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/blog",
+    "status": 200
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/privacyPolicy",
+    "status": 200
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/termsOfUse",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/about",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/faq",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/blog",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/privacyPolicy",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/termsOfUse",
+    "status": 200
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com/about",
+    "status": 200
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com/faq",
+    "status": 200
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com/blog",
+    "status": 200
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com/privacyPolicy",
+    "status": 200
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com/termsOfUse",
+    "status": 200
+  }
+]

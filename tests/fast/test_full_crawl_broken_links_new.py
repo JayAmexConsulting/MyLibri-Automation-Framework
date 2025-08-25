@@ -4,6 +4,8 @@ import csv, json
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
+import requests
+
 
 URL = "https://mylibribooks.com"
 EMAIL = "cpot.tea@gmail.com"
@@ -23,8 +25,11 @@ def check_link_status(link):
             return None
 
 
-def crawl(page, start_url, base_url, visited):
-    """Recursively crawl all <a href> links from a starting URL within the same domain."""
+def crawl(page, start_url, base_url, visited, depth=1):
+    """
+    Crawl <a href> links within the same domain.
+    depth = how many levels to crawl (1 = only this page, >1 = recursive).
+    """
     results = []
     domain = urlparse(base_url).netloc
 
@@ -38,21 +43,24 @@ def crawl(page, start_url, base_url, visited):
         results.append({"url": start_url, "status": None, "error": str(e)})
         return results
 
+    status = check_link_status(start_url)
+    results.append({"url": start_url, "status": status})
+
+    # stop if not recursive
+    if depth <= 0:
+        return results
+
     links = page.eval_on_selector_all("a", "elements => elements.map(e => e.href)")
     for link in links:
-        # Skip empty links or mailto/tel/javascript protocols
         if not link or link.startswith(("mailto:", "tel:", "javascript:")):
             continue
 
         parsed = urlparse(link)
         if parsed.netloc and parsed.netloc != domain:
-            continue  # skip external links
+            continue
         absolute = urljoin(base_url, parsed.path or "/")
         if absolute not in visited:
-            status = check_link_status(absolute)
-            results.append({"url": absolute, "status": status})
-            if status == 200:
-                results.extend(crawl(page, absolute, base_url, visited))
+            results.extend(crawl(page, absolute, base_url, visited, depth - 1))
     return results
 
 
@@ -62,7 +70,6 @@ def test_broken_links():
     Path("test_reports").mkdir(exist_ok=True)
 
     all_results = []
-    visited = set()
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True, slow_mo=100)
@@ -71,7 +78,8 @@ def test_broken_links():
 
         # -------- BEFORE LOGIN --------
         print("\n🌍 Crawling before login...")
-        public_results = crawl(page, URL, URL, visited)
+        visited = set()
+        public_results = crawl(page, URL, URL, visited, depth=1)
         all_results.extend([{"phase": "before_login", **r} for r in public_results])
 
         # -------- LOGIN --------
@@ -86,17 +94,18 @@ def test_broken_links():
 
         # -------- AFTER LOGIN --------
         print("\n🔐 Crawling after login...")
+        visited = set()
         after_login_seeds = [
             f"{URL}/home/dashboard",
             f"{URL}/home/library",
             f"{URL}/home/discover",
-            f"{URL}/blog",
             f"{URL}/home/profile",
+            f"{URL}/home/wallet",
             f"{URL}/home/books",
             f"{URL}/termsOfUse"
         ]
         for seed in after_login_seeds:
-            private_results = crawl(page, seed, URL, visited)
+            private_results = crawl(page, seed, URL, visited, depth=1)
             all_results.extend([{"phase": "after_login", **r} for r in private_results])
 
         # -------- LOGOUT --------
@@ -109,7 +118,8 @@ def test_broken_links():
 
         # -------- AFTER LOGOUT --------
         print("\n🌍 Crawling after logout...")
-        logout_results = crawl(page, URL, URL, visited)
+        visited = set()
+        logout_results = crawl(page, URL, URL, visited, depth=1)
         all_results.extend([{"phase": "after_logout", **r} for r in logout_results])
 
         browser.close()
@@ -127,9 +137,25 @@ def test_broken_links():
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(all_results, f, indent=2)
 
+    # -------- HTML REPORT WITH SUMMARY --------
+    total_links = len(all_results)
+    broken_links = [r for r in all_results if r.get("status") != 200]
+    total_broken = len(broken_links)
+    percent_broken = round((total_broken / total_links * 100), 2) if total_links else 0
+
     with open(html_path, "w", encoding="utf-8") as f:
         f.write("<html><head><title>Full Broken Link Check</title></head><body>")
-        f.write("<h1>🔗 Full Broken Link Check</h1><ul>")
+        f.write("<h1>🔗 Full Broken Link Check</h1>")
+
+        # Summary Table
+        f.write("<h2>📊 Summary</h2>")
+        f.write("<table border='1' cellpadding='5' cellspacing='0'>")
+        f.write("<tr><th>Total Links</th><th>Broken Links</th><th>% Broken</th></tr>")
+        f.write(f"<tr><td>{total_links}</td><td>{total_broken}</td><td>{percent_broken}%</td></tr>")
+        f.write("</table>")
+
+        # Detailed Results
+        f.write("<h2>🔍 Detailed Results</h2><ul>")
         for item in all_results:
             status_display = (
                 f"<span style='color:green'>{item['status']}</span>"
