@@ -4,7 +4,6 @@ import csv, json
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
-import requests
 
 
 URL = "https://mylibribooks.com"
