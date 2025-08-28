@@ -1,0 +1,562 @@
+[
+  {
+    "genre": "Absurdist fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Academic",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Adventure",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "African Literature",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "African Proverbs",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Anthology",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Arts",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Autobiography",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Biography",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Business",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Cartography",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Children Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Children's literature",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Christian Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Christian Literature",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Christian Romance",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Coding",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Collection of Essays",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Combat",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Comic",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Coming-of-age story",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Computer Science",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Contemporary Romance",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Contemporary literature",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Crime Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Cultural-African",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Dark Comedy",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Dark Fantasy",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Domestic Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Drama",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Dystopian Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Economics",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Education",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Educational Series- African",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Epic Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Epistolary novel",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Erotic",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Erotic Literature",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Fairy tale",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Fantasy",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Fantasy Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Finance",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "General Medicine",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Health Science",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Historical Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "History",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Horror Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Humorous Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Inspirational",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Jewish Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Juvenile Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Language",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Law",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Lectures",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Legal Story",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Lifestyle",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Linguistics",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Literary Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Magical Tale",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Marketing and Sales",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Media and Film Studies",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Medicine",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Memoir",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Mind Books",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Motivational",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Mystery",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Non-Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Novel",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Novella",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Occult Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Paranormal Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Paranormal Romance",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Philosophy",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Play",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Poetry",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Political Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Political Satire",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Political Science",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Politics and Government",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Popular Science",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Programming Language",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Prose",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Psychological Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Relationship",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Religious Studies and Theology",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Religious and Spiritual",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Romance",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Romance Novel",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Romance Suspense",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Romantic Crime",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Romantic Suspense",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Romantic thriller",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Satire",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Science",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Science Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Self Development",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Self Discovery",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Self-Help Book",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Short-Stories Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Social Science",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Suspense",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Tales",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Technical",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Thriller",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Tragedy",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Travel Literature",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "True Crime",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "War Story",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "War Story",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Young Adult Fiction",
+    "count": 0,
+    "error": "No href"
+  },
+  {
+    "genre": "Young Readers",
+    "count": 0,
+    "error": "No href"
+  }
+]

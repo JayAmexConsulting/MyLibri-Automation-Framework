@@ -4,41 +4,31 @@ import csv, json
 from datetime import datetime
 from pathlib import Path
 
-# --- Script Configuration ---
 URL = "https://mylibribooks.com"
 EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
 
 @pytest.mark.fast
-def test_quick_check():
+def test_quick_check_multi_pages():
     """
-    Optimized single-page version:
-    - Scrapes all genres from /home/genre
-    - Navigates into each genre, counts books, returns back
-    - Exports CSV, JSON, HTML reports
+    Scrapes book counts for all genres by opening each genre in a new page (faster).
     """
-    print("--- Starting optimized test_quick_check ---")
+    print("--- Starting test_quick_check_multi_pages ---")
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     Path("test_reports").mkdir(exist_ok=True)
 
     with sync_playwright() as p:
-        # Launch fast, no artificial slow_mo
-        browser = p.chromium.launch(
-            headless=True,
-            args=[
-                "--disable-blink-features=AutomationControlled",
-                "--disable-features=site-per-process"
-            ]
-        )
-        page = browser.new_page()
-        page.set_default_timeout(12000)
+        browser = p.chromium.launch(headless=True, slow_mo=200)
+        context = browser.new_context()
+        page = context.new_page()
+        page.set_default_timeout(15000)
 
         # --- Login ---
         print("➡️ Navigating to the login page...")
         page.goto(URL)
         page.click("text=Sign In")
         page.wait_for_url("**/signin")
-
+        
         print("⏳ Logging in...")
         page.fill("input[type='email']", EMAIL)
         page.fill("input[type='password']", PASSWORD)
@@ -49,45 +39,48 @@ def test_quick_check():
         # --- Genre Page ---
         print(f"➡️ Navigating to the genre page: {URL}/home/genre")
         page.goto(f"{URL}/home/genre")
-        page.wait_for_selector("div.genre-wrapper ul li", timeout=12000)
+        page.wait_for_selector("div.genre-wrapper ul li", timeout=15000)
+        
+        genre_elements = page.locator("div.genre-wrapper ul li")
+        genre_count = genre_elements.count()
+        print(f"📚 Total genre elements found: {genre_count}")
 
-        # Preload all genre names
-        genre_names = page.locator("div.genre-wrapper ul li").all_inner_texts()
-        print(f"📚 Total genres found: {len(genre_names)}")
-
+        # Collect all genre names first
+        genre_names = [genre_elements.nth(i).inner_text().strip() for i in range(genre_count)]
+        
         genre_results = []
-        genre_items = page.locator("div.genre-wrapper ul li")
 
-        for i in range(genre_items.count()):
-            genre_name = genre_items.nth(i).inner_text().strip()
-            if not genre_name:
-                continue
-                
+        # --- Open each genre in a new page ---
+        for genre_name in genre_names:
+            print(f"📚 Opening genre: {genre_name}")
+            genre_page = context.new_page()
+            genre_page.goto(f"{URL}/home/genre")
+            genre_page.wait_for_selector("div.genre-wrapper ul li", timeout=15000)
+
             try:
-                print(f"📚 Navigating to genre: {genre_name}")
-                # Click the specific element from the loop
-                genre_items.nth(i).click()
+                # Click the genre
+                genre_page.click(f"text={genre_name}")
+                genre_page.wait_for_timeout(2000)
 
-                # Detect books
-                book_locator = page.locator("div.book-card, div.book-item, .book")
+                # Count books
+                book_locator = genre_page.locator("div.book-card, div.book-item, .book")
                 book_count = book_locator.count() if book_locator.count() > 0 else 0
 
-                print(f"📖 {genre_name}: {book_count} book(s)")
+                print(f"   ➡️ {genre_name}: {book_count} book(s)")
                 genre_results.append({"genre": genre_name, "count": book_count})
 
-                # Reload genre page directly (faster than go_back)
-                page.goto(f"{URL}/home/genre")
-                page.wait_for_selector("div.genre-wrapper ul li", timeout=12000)
-
             except Exception as e:
-                print(f"⚠️ Skipping {genre_name}: {e}")
-                continue
+                print(f"⚠️ Failed for {genre_name}: {e}")
+                genre_results.append({"genre": genre_name, "count": 0})
 
-        # --- Export Results ---
+            finally:
+                genre_page.close()
+
+        # --- Export ---
         print("➡️ Saving test results to files...")
-        csv_path = f"test_reports/genre_book_counts_{timestamp}.csv"
-        json_path = f"test_reports/genre_book_counts_{timestamp}.json"
-        html_path = f"test_reports/genre_book_counts_{timestamp}.html"
+        csv_path = f"test_reports/genre_book_counts_multi_{timestamp}.csv"
+        json_path = f"test_reports/genre_book_counts_multi_{timestamp}.json"
+        html_path = f"test_reports/genre_book_counts_multi_{timestamp}.html"
 
         with open(csv_path, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=["genre", "count"])
