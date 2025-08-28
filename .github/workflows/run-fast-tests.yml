@@ -1,0 +1,72 @@
+name: Daily Fast Tests
+
+on:
+  push:
+    paths:
+      - 'tests/fast/**'
+      - '.github/workflows/fast-test.yml'
+      - 'requirements.txt'
+  schedule:
+    - cron: '0 8 * * *' # Every day at 4AM UTC
+  workflow_dispatch:
+
+jobs:
+  fast-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 📦 Checkout code
+      uses: actions/checkout@v4
+
+    - name: 🐍 Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: 🧪 Install dependencies
+      run: |
+        pip install -r requirements.txt
+        python -m playwright install --with-deps
+
+    - name: 🚀 Run fast tests
+      run: pytest tests/fast --html=reports/fast_test_report.html --self-contained-html -m "fast"
+
+    - name: 📤 Upload report
+      uses: actions/upload-artifact@v4
+      with:
+        name: fast-test-report
+        path: reports/fast_test_report.html
+
+  notify-success:
+    needs: fast-tests
+    if: success()
+    runs-on: ubuntu-latest
+    steps:
+    - name: ✅ Notify Slack on success
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_COLOR: '#2eb886'
+        SLACK_TITLE: "✅ Fast Tests Passed"
+        SLACK_MESSAGE: |
+          *Fast tests* passed ✅  
+          Workflow: _${{ github.workflow }}_  
+          Branch: `${{ github.ref }}`  
+          Commit: `${{ github.sha }}`
+
+  notify-failure:
+    needs: fast-tests
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+    - name: ❌ Notify Slack on failure
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_COLOR: '#e01e5a'
+        SLACK_TITLE: "❌ Fast Test Failure"
+        SLACK_MESSAGE: |
+          *Fast tests* failed ❌  
+          Workflow: _${{ github.workflow }}_  
+          Branch: `${{ github.ref }}`  
+          Commit: `${{ github.sha }}`
