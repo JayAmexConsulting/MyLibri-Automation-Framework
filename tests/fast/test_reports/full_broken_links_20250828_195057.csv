@@ -1,0 +1,14 @@
+phase,url,status
+before_login,https://mylibribooks.com,200
+before_login,https://mylibribooks.com/about,200
+before_login,https://mylibribooks.com/faq,200
+before_login,https://mylibribooks.com/privacypolicy,200
+before_login,https://mylibribooks.com/termsOfUse,200
+before_login,https://mylibribooks.com/blog,200
+after_login,https://mylibribooks.com/home/dashboard,"Error: Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/dashboard
+Call log:
+  - navigating to ""https://mylibribooks.com/home/dashboard"", waiting until ""domcontentloaded""
+"
+after_login,https://mylibribooks.com/home/genre,200
+after_login,https://mylibribooks.com/home/discover,200
+after_login,https://mylibribooks.com/home/library,200

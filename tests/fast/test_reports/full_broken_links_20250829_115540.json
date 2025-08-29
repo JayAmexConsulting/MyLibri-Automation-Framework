@@ -1,0 +1,62 @@
+[
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com",
+    "status": 200
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/about",
+    "status": 200
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/faq",
+    "status": 200
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/privacypolicy",
+    "status": 200
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/termsOfUse",
+    "status": 200
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/blog",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/dashboard",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/genre",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/discover",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/library",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/books",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/wallet",
+    "status": 200
+  }
+]

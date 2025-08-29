@@ -1,50 +1,71 @@
+# full_crawl_broken_links.py
+
 import pytest
 from playwright.sync_api import sync_playwright
 import csv, json
 from datetime import datetime
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
+from collections import deque
 
+# --- Configuration ---
 URL = "https://mylibribooks.com"
 EMAIL = "cpot.tea@gmail.com"
 PASSWORD = "Moniwyse!400"
+TIMEOUT = 15000  # Default timeout in milliseconds
 
-def crawl(page, start_url, base_url, visited):
+def crawl(page, start_url, visited):
     """
-    Crawl from start_url, staying within base_url domain.
+    Crawls a website from a starting URL, staying within the same domain.
     Returns a list of {"url": ..., "status": ...}.
     """
-    to_visit = [start_url]
+    to_visit = deque([start_url])  # Using a deque for efficient queue operations
     results = []
+    base_url = f"{urlparse(start_url).scheme}://{urlparse(start_url).netloc}"
+
+    print(f"Starting crawl from: {start_url}")
 
     while to_visit:
-        current_url = to_visit.pop()
+        current_url = to_visit.popleft() # Use popleft() for a breadth-first search (queue behavior)
+
+        # Skip if already visited to prevent infinite loops and redundant checks.
         if current_url in visited:
             continue
         visited.add(current_url)
 
         try:
-            response = page.goto(current_url, wait_until="domcontentloaded")
+            # Navigate to the page and wait for the DOM to be ready
+            print(f"🔎 Visiting {current_url}")
+            response = page.goto(current_url, wait_until="domcontentloaded", timeout=TIMEOUT)
             status = response.status if response else "No response"
 
-            print(f"🔎 {current_url} → {status}")
+            print(f"✅ {current_url} -> Status: {status}")
             results.append({"url": current_url, "status": status})
 
-            # Collect new links
+            # Find all links on the current page
             anchors = page.locator("a")
             count = anchors.count()
+            
             for i in range(count):
-                href = anchors.nth(i).get_attribute("href")
-                if not href:
+                try:
+                    href = anchors.nth(i).get_attribute("href")
+                    if not href:
+                        continue
+
+                    abs_url = urljoin(current_url, href)
+
+                    # Normalize the URL to remove fragments and query parameters for better comparison
+                    normalized_url = urljoin(base_url, urlparse(abs_url).path)
+
+                    # Add to the queue only if it's within the same domain and not yet visited.
+                    if normalized_url.startswith(base_url) and normalized_url not in visited:
+                        to_visit.append(normalized_url)
+                except Exception as e:
+                    print(f"⚠️ Error processing link {href}: {e}")
                     continue
 
-                abs_url = urljoin(current_url, href)
-                # Stay inside same site
-                if abs_url.startswith(base_url) and abs_url not in visited:
-                    to_visit.append(abs_url)
-
         except Exception as e:
-            print(f"⚠️ Error visiting {current_url}: {e}")
+            print(f"❌ Error visiting {current_url}: {e}")
             results.append({"url": current_url, "status": f"Error: {e}"})
             continue
 
@@ -56,20 +77,25 @@ def test_full_crawl_broken_links():
     Path("test_reports").mkdir(exist_ok=True)
 
     all_results = []
-    visited = set()
+    visited_urls = set()
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
-        page.set_default_timeout(15000)
+        page.set_default_timeout(TIMEOUT)
 
         # --- Phase 1: Before Login ---
-        print("\n🌍 Crawling before login...")
-        public_results = crawl(page, URL, URL, visited)
+        print("\n=== PHASE 1: Crawling before login ===\n")
+        
+        # Crawl from the root and the public blog page
+        public_results = crawl(page, URL, visited_urls)
         all_results.extend([{"phase": "before_login", **r} for r in public_results])
+        
+        blog_results_public = crawl(page, f"{URL}/blog", visited_urls)
+        all_results.extend([{"phase": "before_login", **r} for r in blog_results_public])
 
         # --- Phase 2: After Login ---
-        print("\n🔑 Logging in...")
+        print("\n=== PHASE 2: Logging in and crawling ===\n")
         page.goto(URL)
         page.click("text=Sign In")
         page.wait_for_url("**/signin")
@@ -78,24 +104,38 @@ def test_full_crawl_broken_links():
         page.click("button:has-text('Login')")
         page.wait_for_url("**/home/dashboard**", timeout=20000)
 
-        print("\n🔒 Crawling after login...")
-        private_results = crawl(page, f"{URL}/home/dashboard", URL, visited)
-        all_results.extend([{"phase": "after_login", **r} for r in private_results])
-
+        # Crawl from the dashboard
+        private_results_dashboard = crawl(page, f"{URL}/home/dashboard", visited_urls)
+        all_results.extend([{"phase": "after_login", **r} for r in private_results_dashboard])
+        
+        # Explicitly crawl the other specified pages
+        private_results_genre = crawl(page, f"{URL}/home/genre", visited_urls)
+        all_results.extend([{"phase": "after_login", **r} for r in private_results_genre])
+        
+        private_results_discover = crawl(page, f"{URL}/home/discover", visited_urls)
+        all_results.extend([{"phase": "after_login", **r} for r in private_results_discover])
+        
+        private_results_library = crawl(page, f"{URL}/home/library", visited_urls)
+        all_results.extend([{"phase": "after_login", **r} for r in private_results_library])
+        
+        # Crawl the blog page again after login
+        blog_results_private = crawl(page, f"{URL}/blog", visited_urls)
+        all_results.extend([{"phase": "after_login", **r} for r in blog_results_private])
+        
         # --- Phase 3: After Logout ---
-        print("\n🚪 Logging out...")
+        print("\n=== PHASE 3: Logging out and crawling ===\n")
         try:
-            # Adjust selector to your app's logout button/link
+            # Assuming a "Logout" button or link exists.
             page.click("text=Logout")
             page.wait_for_url("**", timeout=10000)
         except Exception as e:
             print(f"⚠️ Could not log out automatically: {e}")
-
-        print("\n🌍 Crawling after logout...")
-        post_logout_results = crawl(page, URL, URL, visited)
+        
+        post_logout_results = crawl(page, URL, visited_urls)
         all_results.extend([{"phase": "after_logout", **r} for r in post_logout_results])
 
         # --- Export Results ---
+        print("\n--- Exporting Results ---\n")
         csv_path = f"test_reports/full_broken_links_{timestamp}.csv"
         json_path = f"test_reports/full_broken_links_{timestamp}.json"
         html_path = f"test_reports/full_broken_links_{timestamp}.html"
@@ -112,13 +152,14 @@ def test_full_crawl_broken_links():
             f.write("<html><head><title>Full Broken Links Report</title></head><body>")
             f.write("<h1>🔗 Full Broken Link Check</h1><ul>")
             for item in all_results:
+                # Assuming status codes >= 400 are failures
                 color = "red" if isinstance(item['status'], int) and item['status'] >= 400 else "green"
                 f.write(f"<li style='color:{color}'>[{item['phase']}] {item['url']} → {item['status']}</li>")
             f.write("</ul></body></html>")
 
-        print("\n✅ Crawl complete:")
-        print(f" - CSV:  {csv_path}")
+        print("✅ Export complete:")
+        print(f" - CSV: {csv_path}")
         print(f" - JSON: {json_path}")
         print(f" - HTML: {html_path}")
-
+        
         browser.close()
