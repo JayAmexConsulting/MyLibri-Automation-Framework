@@ -1,0 +1,117 @@
+[
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com",
+    "status": null
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/about",
+    "status": null
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/faq",
+    "status": null
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/blog",
+    "status": null
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/privacyPolicy",
+    "status": null
+  },
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com/termsOfUse",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/dashboard",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/about",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/faq",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/blog",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/privacyPolicy",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/termsOfUse",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/library",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/discover",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/profile",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/wallet",
+    "status": null
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/books",
+    "status": null
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com",
+    "status": null
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com/about",
+    "status": null
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com/faq",
+    "status": null
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com/blog",
+    "status": null
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com/privacyPolicy",
+    "status": null
+  },
+  {
+    "phase": "after_logout",
+    "url": "https://mylibribooks.com/termsOfUse",
+    "status": null
+  }
+]

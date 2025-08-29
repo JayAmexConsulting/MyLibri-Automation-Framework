@@ -1,0 +1,7 @@
+phase,url,status
+before_login,https://mylibribooks.com,200
+before_login,https://mylibribooks.com/blog,200
+after_login,https://mylibribooks.com/home/dashboard,200
+after_login,https://mylibribooks.com/home/genre,200
+after_login,https://mylibribooks.com/home/discover,200
+after_login,https://mylibribooks.com/home/library,200

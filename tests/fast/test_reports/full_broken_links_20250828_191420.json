@@ -1,0 +1,12 @@
+[
+  {
+    "phase": "before_login",
+    "url": "https://mylibribooks.com",
+    "status": 200
+  },
+  {
+    "phase": "after_login",
+    "url": "https://mylibribooks.com/home/dashboard",
+    "status": 200
+  }
+]

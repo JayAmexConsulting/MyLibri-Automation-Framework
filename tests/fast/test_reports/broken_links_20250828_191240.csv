@@ -1,0 +1,27 @@
+phase,url,status,error
+before_login,https://mylibribooks.com,,
+before_login,https://mylibribooks.com/about,,
+before_login,https://mylibribooks.com/faq,,
+before_login,https://mylibribooks.com/blog,,
+before_login,https://mylibribooks.com/privacyPolicy,,
+before_login,https://mylibribooks.com/termsOfUse,,
+after_login,https://mylibribooks.com/home/dashboard,,"Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/dashboard
+Call log:
+  - navigating to ""https://mylibribooks.com/home/dashboard"", waiting until ""load""
+"
+after_login,https://mylibribooks.com/home/library,,
+after_login,https://mylibribooks.com/about,,
+after_login,https://mylibribooks.com/faq,,
+after_login,https://mylibribooks.com/blog,,
+after_login,https://mylibribooks.com/privacyPolicy,,
+after_login,https://mylibribooks.com/termsOfUse,,
+after_login,https://mylibribooks.com/home/discover,,
+after_login,https://mylibribooks.com/home/profile,,
+after_login,https://mylibribooks.com/home/wallet,,
+after_login,https://mylibribooks.com/home/books,,
+after_logout,https://mylibribooks.com,,
+after_logout,https://mylibribooks.com/about,,
+after_logout,https://mylibribooks.com/faq,,
+after_logout,https://mylibribooks.com/blog,,
+after_logout,https://mylibribooks.com/privacyPolicy,,
+after_logout,https://mylibribooks.com/termsOfUse,,

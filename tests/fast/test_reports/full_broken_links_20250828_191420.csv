@@ -1,0 +1,3 @@
+phase,url,status
+before_login,https://mylibribooks.com,200
+after_login,https://mylibribooks.com/home/dashboard,200
