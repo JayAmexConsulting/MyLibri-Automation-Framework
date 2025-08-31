@@ -1,0 +1,693 @@
+id,url,status,error
+1516,https://mylibribooks.com/home/books/1516,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1517,https://mylibribooks.com/home/books/1517,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1532,https://mylibribooks.com/home/books/1532,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1533,https://mylibribooks.com/home/books/1533,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1541,https://mylibribooks.com/home/books/1541,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1546,https://mylibribooks.com/home/books/1546,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1550,https://mylibribooks.com/home/books/1550,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1551,https://mylibribooks.com/home/books/1551,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1561,https://mylibribooks.com/home/books/1561,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1566,https://mylibribooks.com/home/books/1566,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1578,https://mylibribooks.com/home/books/1578,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1595,https://mylibribooks.com/home/books/1595,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1596,https://mylibribooks.com/home/books/1596,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1613,https://mylibribooks.com/home/books/1613,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1614,https://mylibribooks.com/home/books/1614,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1622,https://mylibribooks.com/home/books/1622,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1630,https://mylibribooks.com/home/books/1630,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1632,https://mylibribooks.com/home/books/1632,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1646,https://mylibribooks.com/home/books/1646,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1665,https://mylibribooks.com/home/books/1665,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1666,https://mylibribooks.com/home/books/1666,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1676,https://mylibribooks.com/home/books/1676,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1705,https://mylibribooks.com/home/books/1705,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1717,https://mylibribooks.com/home/books/1717,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1746,https://mylibribooks.com/home/books/1746,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1747,https://mylibribooks.com/home/books/1747,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1757,https://mylibribooks.com/home/books/1757,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1758,https://mylibribooks.com/home/books/1758,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1786,https://mylibribooks.com/home/books/1786,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1790,https://mylibribooks.com/home/books/1790,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1801,https://mylibribooks.com/home/books/1801,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1811,https://mylibribooks.com/home/books/1811,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1812,https://mylibribooks.com/home/books/1812,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1828,https://mylibribooks.com/home/books/1828,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1833,https://mylibribooks.com/home/books/1833,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1845,https://mylibribooks.com/home/books/1845,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1853,https://mylibribooks.com/home/books/1853,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1862,https://mylibribooks.com/home/books/1862,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1867,https://mylibribooks.com/home/books/1867,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1874,https://mylibribooks.com/home/books/1874,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1885,https://mylibribooks.com/home/books/1885,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1893,https://mylibribooks.com/home/books/1893,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1906,https://mylibribooks.com/home/books/1906,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1909,https://mylibribooks.com/home/books/1909,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1917,https://mylibribooks.com/home/books/1917,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1918,https://mylibribooks.com/home/books/1918,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1939,https://mylibribooks.com/home/books/1939,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1940,https://mylibribooks.com/home/books/1940,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1950,https://mylibribooks.com/home/books/1950,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1957,https://mylibribooks.com/home/books/1957,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1961,https://mylibribooks.com/home/books/1961,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1974,https://mylibribooks.com/home/books/1974,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1982,https://mylibribooks.com/home/books/1982,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+1991,https://mylibribooks.com/home/books/1991,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2010,https://mylibribooks.com/home/books/2010,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2011,https://mylibribooks.com/home/books/2011,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2025,https://mylibribooks.com/home/books/2025,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2026,https://mylibribooks.com/home/books/2026,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2028,https://mylibribooks.com/home/books/2028,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2044,https://mylibribooks.com/home/books/2044,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2047,https://mylibribooks.com/home/books/2047,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2059,https://mylibribooks.com/home/books/2059,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2068,https://mylibribooks.com/home/books/2068,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2075,https://mylibribooks.com/home/books/2075,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2076,https://mylibribooks.com/home/books/2076,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2089,https://mylibribooks.com/home/books/2089,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2109,https://mylibribooks.com/home/books/2109,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2112,https://mylibribooks.com/home/books/2112,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2118,https://mylibribooks.com/home/books/2118,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2129,https://mylibribooks.com/home/books/2129,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2140,https://mylibribooks.com/home/books/2140,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2149,https://mylibribooks.com/home/books/2149,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2179,https://mylibribooks.com/home/books/2179,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2180,https://mylibribooks.com/home/books/2180,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2203,https://mylibribooks.com/home/books/2203,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2208,https://mylibribooks.com/home/books/2208,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2223,https://mylibribooks.com/home/books/2223,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2243,https://mylibribooks.com/home/books/2243,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2254,https://mylibribooks.com/home/books/2254,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2285,https://mylibribooks.com/home/books/2285,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2295,https://mylibribooks.com/home/books/2295,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2296,https://mylibribooks.com/home/books/2296,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2313,https://mylibribooks.com/home/books/2313,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2331,https://mylibribooks.com/home/books/2331,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2332,https://mylibribooks.com/home/books/2332,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2349,https://mylibribooks.com/home/books/2349,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2351,https://mylibribooks.com/home/books/2351,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2368,https://mylibribooks.com/home/books/2368,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2369,https://mylibribooks.com/home/books/2369,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2377,https://mylibribooks.com/home/books/2377,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2385,https://mylibribooks.com/home/books/2385,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2398,https://mylibribooks.com/home/books/2398,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2403,https://mylibribooks.com/home/books/2403,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2418,https://mylibribooks.com/home/books/2418,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2421,https://mylibribooks.com/home/books/2421,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2422,https://mylibribooks.com/home/books/2422,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2427,https://mylibribooks.com/home/books/2427,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2435,https://mylibribooks.com/home/books/2435,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2453,https://mylibribooks.com/home/books/2453,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2454,https://mylibribooks.com/home/books/2454,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2466,https://mylibribooks.com/home/books/2466,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2473,https://mylibribooks.com/home/books/2473,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2476,https://mylibribooks.com/home/books/2476,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2486,https://mylibribooks.com/home/books/2486,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2497,https://mylibribooks.com/home/books/2497,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2506,https://mylibribooks.com/home/books/2506,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2528,https://mylibribooks.com/home/books/2528,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2537,https://mylibribooks.com/home/books/2537,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2568,https://mylibribooks.com/home/books/2568,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2570,https://mylibribooks.com/home/books/2570,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2580,https://mylibribooks.com/home/books/2580,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2581,https://mylibribooks.com/home/books/2581,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2582,https://mylibribooks.com/home/books/2582,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2583,https://mylibribooks.com/home/books/2583,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2590,https://mylibribooks.com/home/books/2590,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2593,https://mylibribooks.com/home/books/2593,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2607,https://mylibribooks.com/home/books/2607,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2623,https://mylibribooks.com/home/books/2623,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2650,https://mylibribooks.com/home/books/2650,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2654,https://mylibribooks.com/home/books/2654,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2655,https://mylibribooks.com/home/books/2655,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2656,https://mylibribooks.com/home/books/2656,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2657,https://mylibribooks.com/home/books/2657,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2658,https://mylibribooks.com/home/books/2658,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2659,https://mylibribooks.com/home/books/2659,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2660,https://mylibribooks.com/home/books/2660,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2661,https://mylibribooks.com/home/books/2661,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2662,https://mylibribooks.com/home/books/2662,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2663,https://mylibribooks.com/home/books/2663,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2664,https://mylibribooks.com/home/books/2664,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2666,https://mylibribooks.com/home/books/2666,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2667,https://mylibribooks.com/home/books/2667,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2668,https://mylibribooks.com/home/books/2668,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2669,https://mylibribooks.com/home/books/2669,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2670,https://mylibribooks.com/home/books/2670,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2671,https://mylibribooks.com/home/books/2671,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2672,https://mylibribooks.com/home/books/2672,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2673,https://mylibribooks.com/home/books/2673,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2674,https://mylibribooks.com/home/books/2674,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2675,https://mylibribooks.com/home/books/2675,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2676,https://mylibribooks.com/home/books/2676,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2677,https://mylibribooks.com/home/books/2677,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2678,https://mylibribooks.com/home/books/2678,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2679,https://mylibribooks.com/home/books/2679,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2680,https://mylibribooks.com/home/books/2680,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2681,https://mylibribooks.com/home/books/2681,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2682,https://mylibribooks.com/home/books/2682,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2683,https://mylibribooks.com/home/books/2683,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2685,https://mylibribooks.com/home/books/2685,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2686,https://mylibribooks.com/home/books/2686,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2687,https://mylibribooks.com/home/books/2687,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2688,https://mylibribooks.com/home/books/2688,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2689,https://mylibribooks.com/home/books/2689,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2690,https://mylibribooks.com/home/books/2690,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2691,https://mylibribooks.com/home/books/2691,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2692,https://mylibribooks.com/home/books/2692,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2706,https://mylibribooks.com/home/books/2706,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2709,https://mylibribooks.com/home/books/2709,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2716,https://mylibribooks.com/home/books/2716,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2723,https://mylibribooks.com/home/books/2723,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2745,https://mylibribooks.com/home/books/2745,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2746,https://mylibribooks.com/home/books/2746,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2764,https://mylibribooks.com/home/books/2764,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2765,https://mylibribooks.com/home/books/2765,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2783,https://mylibribooks.com/home/books/2783,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2784,https://mylibribooks.com/home/books/2784,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2792,https://mylibribooks.com/home/books/2792,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2794,https://mylibribooks.com/home/books/2794,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2805,https://mylibribooks.com/home/books/2805,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2811,https://mylibribooks.com/home/books/2811,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2824,https://mylibribooks.com/home/books/2824,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2826,https://mylibribooks.com/home/books/2826,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+2831,https://mylibribooks.com/home/books/2831,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"

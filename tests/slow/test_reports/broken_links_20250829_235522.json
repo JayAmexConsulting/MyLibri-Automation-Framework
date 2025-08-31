@@ -1,0 +1,68 @@
+[
+  {
+    "id": 9,
+    "url": "https://mylibribooks.com/home/books/9",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 15,
+    "url": "https://mylibribooks.com/home/books/15",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 23,
+    "url": "https://mylibribooks.com/home/books/23",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 32,
+    "url": "https://mylibribooks.com/home/books/32",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 40,
+    "url": "https://mylibribooks.com/home/books/40",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 49,
+    "url": "https://mylibribooks.com/home/books/49",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 60,
+    "url": "https://mylibribooks.com/home/books/60",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 66,
+    "url": "https://mylibribooks.com/home/books/66",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 84,
+    "url": "https://mylibribooks.com/home/books/84",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 85,
+    "url": "https://mylibribooks.com/home/books/85",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 89,
+    "url": "https://mylibribooks.com/home/books/89",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  }
+]

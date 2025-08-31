@@ -1,0 +1,51 @@
+id,url,title,author,rating,cover,errors,timestamp
+1,https://mylibribooks.com/home/books/1,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:48:56.516747
+2,https://mylibribooks.com/home/books/2,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:48:57.448921
+3,https://mylibribooks.com/home/books/3,N/A,N/A,N/A,N/A,"Locator.count: Execution context was destroyed, most likely because of a navigation",2025-08-30T22:48:58.481481
+4,https://mylibribooks.com/home/books/4,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:48:59.515129
+5,https://mylibribooks.com/home/books/5,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:00.549105
+6,https://mylibribooks.com/home/books/6,N/A,N/A,N/A,N/A,"Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/6
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/6"", waiting until ""load""
+",2025-08-30T22:49:00.633875
+7,https://mylibribooks.com/home/books/7,N/A,N/A,N/A,N/A,"Page.goto: Navigation to ""https://mylibribooks.com/home/books/7"" is interrupted by another navigation to ""https://mylibribooks.com/signi""
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/7"", waiting until ""load""
+",2025-08-30T22:49:00.801550
+8,https://mylibribooks.com/home/books/8,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:01.781446
+9,https://mylibribooks.com/home/books/9,N/A,N/A,N/A,N/A,"Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/9
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/9"", waiting until ""load""
+",2025-08-30T22:49:01.951236
+10,https://mylibribooks.com/home/books/10,N/A,N/A,N/A,N/A,"Locator.count: Execution context was destroyed, most likely because of a navigation",2025-08-30T22:49:02.859983
+11,https://mylibribooks.com/home/books/11,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:04.041971
+12,https://mylibribooks.com/home/books/12,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:05.002126
+13,https://mylibribooks.com/home/books/13,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:06.248304
+14,https://mylibribooks.com/home/books/14,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:07.220575
+15,https://mylibribooks.com/home/books/15,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:08.376497
+16,https://mylibribooks.com/home/books/16,N/A,N/A,N/A,N/A,"Locator.count: Execution context was destroyed, most likely because of a navigation",2025-08-30T22:49:09.717921
+17,https://mylibribooks.com/home/books/17,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:10.702346
+18,https://mylibribooks.com/home/books/18,N/A,N/A,N/A,N/A,"Locator.count: Execution context was destroyed, most likely because of a navigation",2025-08-30T22:49:11.647504
+19,https://mylibribooks.com/home/books/19,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:12.971608
+20,https://mylibribooks.com/home/books/20,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:14.116966
+21,https://mylibribooks.com/home/books/21,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:15.028663
+22,https://mylibribooks.com/home/books/22,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:16.093172
+23,https://mylibribooks.com/home/books/23,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:16.989728
+24,https://mylibribooks.com/home/books/24,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:17.907474
+25,https://mylibribooks.com/home/books/25,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:18.910414
+26,https://mylibribooks.com/home/books/26,N/A,N/A,N/A,N/A,"Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/26
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/26"", waiting until ""load""
+",2025-08-30T22:49:18.951002
+27,https://mylibribooks.com/home/books/27,N/A,N/A,N/A,N/A,"Locator.count: Execution context was destroyed, most likely because of a navigation",2025-08-30T22:49:20.155340
+28,https://mylibribooks.com/home/books/28,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:21.584695
+29,https://mylibribooks.com/home/books/29,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:22.802062
+30,https://mylibribooks.com/home/books/30,N/A,N/A,N/A,N/A,"Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/30
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/30"", waiting until ""load""
+",2025-08-30T22:49:22.929439
+31,https://mylibribooks.com/home/books/31,N/A,N/A,N/A,N/A,"Page.goto: Navigation to ""https://mylibribooks.com/home/books/31"" is interrupted by another navigation to ""https://mylibribooks.com/signi""
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/31"", waiting until ""load""
+",2025-08-30T22:49:23.123493
+32,https://mylibribooks.com/home/books/32,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:49:24.472982

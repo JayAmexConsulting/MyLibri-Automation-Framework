@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "url": "https://mylibribooks.com/home/books/1",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:48:56.516747"
+  },
+  {
+    "id": 2,
+    "url": "https://mylibribooks.com/home/books/2",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:48:57.448921"
+  },
+  {
+    "id": 3,
+    "url": "https://mylibribooks.com/home/books/3",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Locator.count: Execution context was destroyed, most likely because of a navigation",
+    "timestamp": "2025-08-30T22:48:58.481481"
+  },
+  {
+    "id": 4,
+    "url": "https://mylibribooks.com/home/books/4",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:48:59.515129"
+  },
+  {
+    "id": 5,
+    "url": "https://mylibribooks.com/home/books/5",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:00.549105"
+  },
+  {
+    "id": 6,
+    "url": "https://mylibribooks.com/home/books/6",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/6\nCall log:\n  - navigating to \"https://mylibribooks.com/home/books/6\", waiting until \"load\"\n",
+    "timestamp": "2025-08-30T22:49:00.633875"
+  },
+  {
+    "id": 7,
+    "url": "https://mylibribooks.com/home/books/7",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Page.goto: Navigation to \"https://mylibribooks.com/home/books/7\" is interrupted by another navigation to \"https://mylibribooks.com/signi\"\nCall log:\n  - navigating to \"https://mylibribooks.com/home/books/7\", waiting until \"load\"\n",
+    "timestamp": "2025-08-30T22:49:00.801550"
+  },
+  {
+    "id": 8,
+    "url": "https://mylibribooks.com/home/books/8",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:01.781446"
+  },
+  {
+    "id": 9,
+    "url": "https://mylibribooks.com/home/books/9",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/9\nCall log:\n  - navigating to \"https://mylibribooks.com/home/books/9\", waiting until \"load\"\n",
+    "timestamp": "2025-08-30T22:49:01.951236"
+  },
+  {
+    "id": 10,
+    "url": "https://mylibribooks.com/home/books/10",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Locator.count: Execution context was destroyed, most likely because of a navigation",
+    "timestamp": "2025-08-30T22:49:02.859983"
+  },
+  {
+    "id": 11,
+    "url": "https://mylibribooks.com/home/books/11",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:04.041971"
+  },
+  {
+    "id": 12,
+    "url": "https://mylibribooks.com/home/books/12",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:05.002126"
+  },
+  {
+    "id": 13,
+    "url": "https://mylibribooks.com/home/books/13",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:06.248304"
+  },
+  {
+    "id": 14,
+    "url": "https://mylibribooks.com/home/books/14",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:07.220575"
+  },
+  {
+    "id": 15,
+    "url": "https://mylibribooks.com/home/books/15",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:08.376497"
+  },
+  {
+    "id": 16,
+    "url": "https://mylibribooks.com/home/books/16",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Locator.count: Execution context was destroyed, most likely because of a navigation",
+    "timestamp": "2025-08-30T22:49:09.717921"
+  },
+  {
+    "id": 17,
+    "url": "https://mylibribooks.com/home/books/17",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:10.702346"
+  },
+  {
+    "id": 18,
+    "url": "https://mylibribooks.com/home/books/18",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Locator.count: Execution context was destroyed, most likely because of a navigation",
+    "timestamp": "2025-08-30T22:49:11.647504"
+  },
+  {
+    "id": 19,
+    "url": "https://mylibribooks.com/home/books/19",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:12.971608"
+  },
+  {
+    "id": 20,
+    "url": "https://mylibribooks.com/home/books/20",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:14.116966"
+  },
+  {
+    "id": 21,
+    "url": "https://mylibribooks.com/home/books/21",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:15.028663"
+  },
+  {
+    "id": 22,
+    "url": "https://mylibribooks.com/home/books/22",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:16.093172"
+  },
+  {
+    "id": 23,
+    "url": "https://mylibribooks.com/home/books/23",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:16.989728"
+  },
+  {
+    "id": 24,
+    "url": "https://mylibribooks.com/home/books/24",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:17.907474"
+  },
+  {
+    "id": 25,
+    "url": "https://mylibribooks.com/home/books/25",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:18.910414"
+  },
+  {
+    "id": 26,
+    "url": "https://mylibribooks.com/home/books/26",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/26\nCall log:\n  - navigating to \"https://mylibribooks.com/home/books/26\", waiting until \"load\"\n",
+    "timestamp": "2025-08-30T22:49:18.951002"
+  },
+  {
+    "id": 27,
+    "url": "https://mylibribooks.com/home/books/27",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Locator.count: Execution context was destroyed, most likely because of a navigation",
+    "timestamp": "2025-08-30T22:49:20.155340"
+  },
+  {
+    "id": 28,
+    "url": "https://mylibribooks.com/home/books/28",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:21.584695"
+  },
+  {
+    "id": 29,
+    "url": "https://mylibribooks.com/home/books/29",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:22.802062"
+  },
+  {
+    "id": 30,
+    "url": "https://mylibribooks.com/home/books/30",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/30\nCall log:\n  - navigating to \"https://mylibribooks.com/home/books/30\", waiting until \"load\"\n",
+    "timestamp": "2025-08-30T22:49:22.929439"
+  },
+  {
+    "id": 31,
+    "url": "https://mylibribooks.com/home/books/31",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Page.goto: Navigation to \"https://mylibribooks.com/home/books/31\" is interrupted by another navigation to \"https://mylibribooks.com/signi\"\nCall log:\n  - navigating to \"https://mylibribooks.com/home/books/31\", waiting until \"load\"\n",
+    "timestamp": "2025-08-30T22:49:23.123493"
+  },
+  {
+    "id": 32,
+    "url": "https://mylibribooks.com/home/books/32",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:49:24.472982"
+  }
+]

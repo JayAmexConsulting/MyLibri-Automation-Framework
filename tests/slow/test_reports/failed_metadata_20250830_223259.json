@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "url": "https://mylibribooks.com/home/books/1",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:34.738589"
+  },
+  {
+    "id": 2,
+    "url": "https://mylibribooks.com/home/books/2",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:35.707599"
+  },
+  {
+    "id": 3,
+    "url": "https://mylibribooks.com/home/books/3",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:36.634020"
+  },
+  {
+    "id": 4,
+    "url": "https://mylibribooks.com/home/books/4",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:37.546002"
+  },
+  {
+    "id": 5,
+    "url": "https://mylibribooks.com/home/books/5",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:38.491597"
+  },
+  {
+    "id": 6,
+    "url": "https://mylibribooks.com/home/books/6",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:39.400448"
+  },
+  {
+    "id": 7,
+    "url": "https://mylibribooks.com/home/books/7",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:40.334039"
+  },
+  {
+    "id": 8,
+    "url": "https://mylibribooks.com/home/books/8",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/8\nCall log:\n  - navigating to \"https://mylibribooks.com/home/books/8\", waiting until \"load\"\n",
+    "timestamp": "2025-08-30T22:32:40.493666"
+  },
+  {
+    "id": 9,
+    "url": "https://mylibribooks.com/home/books/9",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:41.435059"
+  },
+  {
+    "id": 10,
+    "url": "https://mylibribooks.com/home/books/10",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/10\nCall log:\n  - navigating to \"https://mylibribooks.com/home/books/10\", waiting until \"load\"\n",
+    "timestamp": "2025-08-30T22:32:41.599560"
+  },
+  {
+    "id": 11,
+    "url": "https://mylibribooks.com/home/books/11",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:42.492260"
+  },
+  {
+    "id": 12,
+    "url": "https://mylibribooks.com/home/books/12",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:43.436443"
+  },
+  {
+    "id": 13,
+    "url": "https://mylibribooks.com/home/books/13",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/13\nCall log:\n  - navigating to \"https://mylibribooks.com/home/books/13\", waiting until \"load\"\n",
+    "timestamp": "2025-08-30T22:32:43.600201"
+  },
+  {
+    "id": 14,
+    "url": "https://mylibribooks.com/home/books/14",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:44.574748"
+  },
+  {
+    "id": 15,
+    "url": "https://mylibribooks.com/home/books/15",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:45.583359"
+  },
+  {
+    "id": 16,
+    "url": "https://mylibribooks.com/home/books/16",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "cover": "N/A",
+    "errors": "Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/16\nCall log:\n  - navigating to \"https://mylibribooks.com/home/books/16\", waiting until \"load\"\n",
+    "timestamp": "2025-08-30T22:32:45.771659"
+  },
+  {
+    "id": 17,
+    "url": "https://mylibribooks.com/home/books/17",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:46.756876"
+  },
+  {
+    "id": 18,
+    "url": "https://mylibribooks.com/home/books/18",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:47.727473"
+  },
+  {
+    "id": 19,
+    "url": "https://mylibribooks.com/home/books/19",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:48.631257"
+  },
+  {
+    "id": 20,
+    "url": "https://mylibribooks.com/home/books/20",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:49.599269"
+  },
+  {
+    "id": 21,
+    "url": "https://mylibribooks.com/home/books/21",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:50.540482"
+  },
+  {
+    "id": 22,
+    "url": "https://mylibribooks.com/home/books/22",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:51.747931"
+  },
+  {
+    "id": 23,
+    "url": "https://mylibribooks.com/home/books/23",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:52.668599"
+  },
+  {
+    "id": 24,
+    "url": "https://mylibribooks.com/home/books/24",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:53.633177"
+  },
+  {
+    "id": 25,
+    "url": "https://mylibribooks.com/home/books/25",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:54.621161"
+  },
+  {
+    "id": 26,
+    "url": "https://mylibribooks.com/home/books/26",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:55.535901"
+  },
+  {
+    "id": 27,
+    "url": "https://mylibribooks.com/home/books/27",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:56.489888"
+  },
+  {
+    "id": 28,
+    "url": "https://mylibribooks.com/home/books/28",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:57.503258"
+  },
+  {
+    "id": 29,
+    "url": "https://mylibribooks.com/home/books/29",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:58.453802"
+  },
+  {
+    "id": 30,
+    "url": "https://mylibribooks.com/home/books/30",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "No Rating",
+    "cover": "No Cover",
+    "errors": "Missing title, Missing author, Missing cover",
+    "timestamp": "2025-08-30T22:32:59.354675"
+  }
+]

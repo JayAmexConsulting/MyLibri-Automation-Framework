@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "url": "https://mylibribooks.com/home/books/1",
+    "title": "The Challenge for Africa",
+    "author": "Wangari Maathai",
+    "rating": "No Rating",
+    "pages": "336 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:14.283247"
+  },
+  {
+    "id": 2,
+    "url": "https://mylibribooks.com/home/books/2",
+    "title": "God Dies by the Nile and Other Novels",
+    "author": "Nawal El Saadawi",
+    "rating": "No Rating",
+    "pages": "286 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:16.934896"
+  },
+  {
+    "id": 3,
+    "url": "https://mylibribooks.com/home/books/3",
+    "title": "The Captain and the Enemy",
+    "author": "Graham Greene",
+    "rating": "No Rating",
+    "pages": "224 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:20.324755"
+  },
+  {
+    "id": 4,
+    "url": "https://mylibribooks.com/home/books/4",
+    "title": "Dark Carnival",
+    "author": "Ray Bradbury",
+    "rating": "No Rating",
+    "pages": "313 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:23.026137"
+  },
+  {
+    "id": 5,
+    "url": "https://mylibribooks.com/home/books/5",
+    "title": "The Hemingway Valise",
+    "author": "Robert Olen Butler",
+    "rating": "No Rating",
+    "pages": "60 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:25.714293"
+  },
+  {
+    "id": 6,
+    "url": "https://mylibribooks.com/home/books/6",
+    "title": "This Mournable Body",
+    "author": "Tsitsi Dangaremgba",
+    "rating": "No Rating",
+    "pages": "304 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:28.865059"
+  },
+  {
+    "id": 7,
+    "url": "https://mylibribooks.com/home/books/7",
+    "title": "The Camel of Destruction",
+    "author": "Michael Pearce",
+    "rating": "No Rating",
+    "pages": "250 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:31.579630"
+  },
+  {
+    "id": 8,
+    "url": "https://mylibribooks.com/home/books/8",
+    "title": "Strangers with the Same Dream",
+    "author": "Alison Pick",
+    "rating": "No Rating",
+    "pages": "384 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:34.253619"
+  },
+  {
+    "id": 9,
+    "url": "https://mylibribooks.com/home/books/9",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "pages": "N/A",
+    "comment": "Book ID Broken, no valid book metadata found",
+    "timestamp": "2025-08-31T01:42:42.727872"
+  },
+  {
+    "id": 10,
+    "url": "https://mylibribooks.com/home/books/10",
+    "title": "Emerging Technologies in Agricultural Engineering",
+    "author": "Megh R. Goyal",
+    "rating": "No Rating",
+    "pages": "121 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:45.499105"
+  },
+  {
+    "id": 11,
+    "url": "https://mylibribooks.com/home/books/11",
+    "title": "Becoming 25",
+    "author": "Obianuju Jane Ebubeoha",
+    "rating": "(2.0 Average Rating)",
+    "pages": "16 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:47.760472"
+  },
+  {
+    "id": 12,
+    "url": "https://mylibribooks.com/home/books/12",
+    "title": "The Complete Collected Poems",
+    "author": "Maya Angelou",
+    "rating": "No Rating",
+    "pages": "273 Pages",
+    "comment": "Valid",
+    "timestamp": "2025-08-31T01:42:49.580294"
+  },
+  {
+    "id": 13,
+    "url": "https://mylibribooks.com/home/books/13",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "pages": "N/A",
+    "comment": "Book ID Broken, no valid book metadata found",
+    "timestamp": "2025-08-31T01:42:57.961424"
+  },
+  {
+    "id": 14,
+    "url": "https://mylibribooks.com/home/books/14",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "pages": "N/A",
+    "comment": "Book ID Broken, no valid book metadata found",
+    "timestamp": "2025-08-31T01:43:06.309308"
+  },
+  {
+    "id": 15,
+    "url": "https://mylibribooks.com/home/books/15",
+    "title": "N/A",
+    "author": "N/A",
+    "rating": "N/A",
+    "pages": "N/A",
+    "comment": "Book ID Broken, no valid book metadata found",
+    "timestamp": "2025-08-31T01:43:14.676837"
+  }
+]
