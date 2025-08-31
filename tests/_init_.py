@@ -7,3 +7,4 @@ testpaths =
 markers =
     slow: marks tests as slow (deselect with '-m "not slow"')
     fast: marks tests as fast (included by default)
+    norecursedirs = archive
