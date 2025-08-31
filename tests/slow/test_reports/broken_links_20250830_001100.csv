@@ -1,0 +1,45 @@
+id,url,status,error
+9,https://mylibribooks.com/home/books/9,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+16,https://mylibribooks.com/home/books/16,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+23,https://mylibribooks.com/home/books/23,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+33,https://mylibribooks.com/home/books/33,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+40,https://mylibribooks.com/home/books/40,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+51,https://mylibribooks.com/home/books/51,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+60,https://mylibribooks.com/home/books/60,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+67,https://mylibribooks.com/home/books/67,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+84,https://mylibribooks.com/home/books/84,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+85,https://mylibribooks.com/home/books/85,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"
+89,https://mylibribooks.com/home/books/89,Broken,"Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator(""div.book-details h1.book-name"").first
+"

@@ -11,7 +11,7 @@ PASSWORD = "Moniwyse!400"
 @pytest.mark.slow
 def test_long_running():
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True, slow_mo=300)
+        browser = p.chromium.launch(headless=False, slow_mo=300)  # headless=False for debugging
         page = browser.new_page()
         page.goto(URL)
 
@@ -27,35 +27,45 @@ def test_long_running():
         page.goto(f"{URL}/home/genre")
         page.wait_for_timeout(1500)
 
-        # Get all genre names safely
-        genre_texts = page.locator("div.genre-wrapper ul li").all_inner_texts()
-        genre_texts = [g.strip() for g in genre_texts if g.strip()]
+        # Capture genre names (list items inside wrapper)
+        genre_items = page.locator("div.genre-wrapper li")
+        genre_count = genre_items.count()
+        print(f"🔎 Found {genre_count} genres")
+
+        genre_texts = []
+        for i in range(genre_count):
+            txt = genre_items.nth(i).inner_text().strip()
+            if txt:
+                genre_texts.append(txt)
+
         all_books = []
 
         for genre_name in genre_texts:
-            print(f"➡️  Visiting genre: {genre_name}")
+            print(f"➡️ Visiting genre: {genre_name}")
             try:
                 page.locator(f"text={genre_name}").first.click()
                 page.wait_for_timeout(2500)
                 genre_url = page.url
 
-                book_cards = page.locator("div.book-and-author")
+                # Try different book selectors
+                book_cards = page.locator("div.book-and-author, div.book-card, div.book-item")
                 book_count = book_cards.count()
+                print(f"📚 Found {book_count} book(s) in {genre_name}")
 
                 for i in range(book_count):
                     book = book_cards.nth(i)
                     try:
-                        title = book.locator("h2").inner_text().strip()
+                        title = book.locator("h2, h3, .book-title").first.inner_text().strip()
                     except:
                         title = "N/A"
 
                     try:
-                        author = book.locator("p").nth(0).inner_text().strip()
+                        author = book.locator("p, .author-name").first.inner_text().strip()
                     except:
                         author = "N/A"
 
                     try:
-                        rating = book.locator("span:has-text('Rating')").inner_text().strip()
+                        rating = book.locator("text=Rating").first.inner_text().strip()
                     except:
                         rating = "N/A"
 
@@ -67,7 +77,7 @@ def test_long_running():
                         "genre_url": genre_url
                     })
 
-                print(f"✅ {genre_name}: {book_count} book(s) extracted")
+                print(f"✅ Extracted {book_count} book(s) from {genre_name}")
 
             except Exception as e:
                 print(f"⚠️ Skipping genre '{genre_name}': {e}")
@@ -76,7 +86,7 @@ def test_long_running():
             page.goto(f"{URL}/home/genre")
             page.wait_for_timeout(1000)
 
-        # Export
+        # Export results
         Path("test_reports").mkdir(exist_ok=True)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         csv_path = f"test_reports/books_metadata_{timestamp}.csv"

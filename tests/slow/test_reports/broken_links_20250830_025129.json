@@ -1,0 +1,20 @@
+[
+  {
+    "id": 9,
+    "url": "https://mylibribooks.com/home/books/9",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 23,
+    "url": "https://mylibribooks.com/home/books/23",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  },
+  {
+    "id": 40,
+    "url": "https://mylibribooks.com/home/books/40",
+    "status": "Broken",
+    "error": "Failed to load page or find title: Locator.text_content: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator(\"div.book-details h1.book-name\").first\n"
+  }
+]

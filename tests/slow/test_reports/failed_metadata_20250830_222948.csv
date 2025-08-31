@@ -1,0 +1,46 @@
+id,url,title,author,rating,cover,errors,timestamp
+1501,https://mylibribooks.com/home/books/1501,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:24.946589
+1502,https://mylibribooks.com/home/books/1502,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:25.877891
+1503,https://mylibribooks.com/home/books/1503,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:26.787935
+1504,https://mylibribooks.com/home/books/1504,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:27.715756
+1505,https://mylibribooks.com/home/books/1505,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:28.782665
+1506,https://mylibribooks.com/home/books/1506,N/A,N/A,N/A,N/A,"Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/1506
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/1506"", waiting until ""load""
+",2025-08-30T22:29:28.870400
+1507,https://mylibribooks.com/home/books/1507,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:29.860508
+1508,https://mylibribooks.com/home/books/1508,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:30.773865
+1509,https://mylibribooks.com/home/books/1509,N/A,N/A,N/A,N/A,"Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/1509
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/1509"", waiting until ""load""
+",2025-08-30T22:29:30.868348
+1510,https://mylibribooks.com/home/books/1510,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:31.814223
+1511,https://mylibribooks.com/home/books/1511,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:32.715850
+1512,https://mylibribooks.com/home/books/1512,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:33.589022
+1513,https://mylibribooks.com/home/books/1513,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:34.486327
+1514,https://mylibribooks.com/home/books/1514,N/A,N/A,N/A,N/A,"Locator.count: Execution context was destroyed, most likely because of a navigation",2025-08-30T22:29:35.540933
+1515,https://mylibribooks.com/home/books/1515,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:36.465035
+1516,https://mylibribooks.com/home/books/1516,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:37.375460
+1517,https://mylibribooks.com/home/books/1517,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:38.287254
+1518,https://mylibribooks.com/home/books/1518,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:39.215421
+1519,https://mylibribooks.com/home/books/1519,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:40.263218
+1520,https://mylibribooks.com/home/books/1520,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:41.157356
+1521,https://mylibribooks.com/home/books/1521,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:42.095821
+1522,https://mylibribooks.com/home/books/1522,N/A,N/A,N/A,N/A,"Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/1522
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/1522"", waiting until ""load""
+",2025-08-30T22:29:42.274047
+1523,https://mylibribooks.com/home/books/1523,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:43.166294
+1524,https://mylibribooks.com/home/books/1524,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:44.196144
+1525,https://mylibribooks.com/home/books/1525,N/A,N/A,N/A,N/A,"Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/1525
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/1525"", waiting until ""load""
+",2025-08-30T22:29:44.268635
+1526,https://mylibribooks.com/home/books/1526,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:45.161050
+1527,https://mylibribooks.com/home/books/1527,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:46.059801
+1528,https://mylibribooks.com/home/books/1528,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:47.098790
+1529,https://mylibribooks.com/home/books/1529,N/A,N/A,N/A,N/A,"Page.goto: net::ERR_ABORTED at https://mylibribooks.com/home/books/1529
+Call log:
+  - navigating to ""https://mylibribooks.com/home/books/1529"", waiting until ""load""
+",2025-08-30T22:29:47.167503
+1530,https://mylibribooks.com/home/books/1530,N/A,N/A,No Rating,No Cover,"Missing title, Missing author, Missing cover",2025-08-30T22:29:48.048516
