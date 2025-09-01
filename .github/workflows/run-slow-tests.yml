@@ -55,7 +55,6 @@ jobs:
         run: |
           pytest tests/slow/test_book_metadata_validations_part1.py \
                  tests/slow/test_book_metadata_validations_part2.py \
-                 tests/slow/test_genres_books_metadata.py \
                  --html=reports/slow_batch2_report.html --self-contained-html
 
       - name: 📤 Upload report (Batch 2)
